@@ -154,39 +154,42 @@ export default function EmperorTaizu() {
         </div>
       </section>
 
-      {/* DETAILED LEDGER */}
-      <section className="relative z-10 max-w-4xl mx-auto px-6 py-20">
-        <div className="glass-panel rounded-xl p-8 space-y-6 relative border-t-2 border-t-rose-600/60 overflow-hidden group">
-          <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-            <Globe className="w-24 h-24" />
+      {/* MAIN CONTENT GRID */}
+      <section className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* DETAILED LEDGER */}
+        <div className="lg:col-span-5">
+          <div className="glass-panel rounded-xl p-8 space-y-6 relative border-t-2 border-t-rose-600/60 overflow-hidden group h-full">
+            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+              <Globe className="w-24 h-24" />
+            </div>
+            <h2 className="font-mono text-xl neon-text flex items-center gap-3">
+              <span className="w-2 h-2 bg-rose-500"></span> HISTORICAL_BACKGROUND
+            </h2>
+            <ul className="space-y-4 text-stone-300 font-sans text-[15px] leading-relaxed list-none">
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-rose-500 text-lg leading-6 shrink-0">•</span>
+                <span>Rose to prominence as a military commander during the chaotic <strong>Five Dynasties and Ten Kingdoms period</strong></span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-rose-500 text-lg leading-6 shrink-0">•</span>
+                <span>Troops orchestrated the <strong>Chen Bridge Mutiny (960 CE)</strong>, forcing the yellow imperial robe upon him</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-rose-500 text-lg leading-6 shrink-0">•</span>
+                <span>Founded the <strong>Song Dynasty</strong> with the goal of ending military coups and reunifying China</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-rose-500 text-lg leading-6 shrink-0">•</span>
+                <span>Accession was remarkably bloodless and widely supported by both military and civilian factions</span>
+              </li>
+            </ul>
           </div>
-          <h2 className="font-mono text-xl neon-text flex items-center gap-3">
-            <span className="w-2 h-2 bg-rose-500"></span> HISTORICAL_BACKGROUND
-          </h2>
-          <ul className="space-y-4 text-stone-300 font-sans text-[15px] leading-relaxed list-none">
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-rose-500 text-lg leading-6 shrink-0">•</span>
-              <span>Rose to prominence as a military commander during the chaotic <strong>Five Dynasties and Ten Kingdoms period</strong></span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-rose-500 text-lg leading-6 shrink-0">•</span>
-              <span>Troops orchestrated the <strong>Chen Bridge Mutiny (960 CE)</strong>, forcing the yellow imperial robe upon him</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-rose-500 text-lg leading-6 shrink-0">•</span>
-              <span>Founded the <strong>Song Dynasty</strong> with the goal of ending military coups and reunifying China</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-rose-500 text-lg leading-6 shrink-0">•</span>
-              <span>Accession was remarkably bloodless and widely supported by both military and civilian factions</span>
-            </li>
-          </ul>
         </div>
-      </section>
 
-      {/* TIMELINE */}
-      <section className="relative z-10 max-w-7xl mx-auto px-6 py-12">
-        <Timeline events={timelineEvents} title="HISTORICAL_LOG // ZHAO_KUANGYIN" />
+        {/* TIMELINE */}
+        <div className="lg:col-span-7">
+          <Timeline events={timelineEvents} title="HISTORICAL_LOG // ZHAO_KUANGYIN" />
+        </div>
       </section>
 
       {/* FOOTER */}

@@ -156,43 +156,46 @@ export default function SuryavarmanII() {
         </div>
       </section>
 
-      {/* DETAILED LEDGER */}
-      <section className="relative z-10 max-w-4xl mx-auto px-6 py-20">
-        <div className="glass-panel rounded-xl p-8 space-y-6 relative border-t-2 border-t-lime-600/60 overflow-hidden group">
-          <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-            <Globe className="w-24 h-24" />
+      {/* MAIN CONTENT GRID */}
+      <section className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* DETAILED LEDGER */}
+        <div className="lg:col-span-5">
+          <div className="glass-panel rounded-xl p-8 space-y-6 relative border-t-2 border-t-lime-600/60 overflow-hidden group h-full">
+            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+              <Globe className="w-24 h-24" />
+            </div>
+            <h2 className="font-mono text-xl text-lime-400 drop-shadow-[0_0_8px_rgba(163,230,53,0.5)] flex items-center gap-3">
+              <span className="w-2 h-2 bg-lime-500"></span> HISTORICAL_BACKGROUND
+            </h2>
+            <ul className="space-y-4 text-stone-300 font-sans text-[15px] leading-relaxed list-none">
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-lime-400 text-lg leading-6 shrink-0">•</span>
+                <span>Ascended the throne after a period of internal conflict, successfully <strong>reunifying</strong> the Khmer Empire under a centralized authority</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-lime-400 text-lg leading-6 shrink-0">•</span>
+                <span>Commissioned the construction of <strong>Angkor Wat</strong>, a temple mountain dedicated to the Hindu god Vishnu, symbolizing the cosmic Mount Meru</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-lime-400 text-lg leading-6 shrink-0">•</span>
+                <span>Expanded the empire's borders into modern-day <strong>Thailand, Vietnam, and Laos</strong> through aggressive military campaigns against Champa and neighboring states</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-lime-400 text-lg leading-6 shrink-0">•</span>
+                <span>Strengthened political and economic ties with <strong>China's Song Dynasty</strong>, sending numerous diplomatic missions to the imperial court</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-lime-400 text-lg leading-6 shrink-0">•</span>
+                <span>Oversaw a period of immense artistic and cultural production, with the Khmer style reaching its <strong>classical peak</strong> in architecture and bas-relief carvings</span>
+              </li>
+            </ul>
           </div>
-          <h2 className="font-mono text-xl text-lime-400 drop-shadow-[0_0_8px_rgba(163,230,53,0.5)] flex items-center gap-3">
-            <span className="w-2 h-2 bg-lime-500"></span> HISTORICAL_BACKGROUND
-          </h2>
-          <ul className="space-y-4 text-stone-300 font-sans text-[15px] leading-relaxed list-none">
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-lime-400 text-lg leading-6 shrink-0">•</span>
-              <span>Ascended the throne after a period of internal conflict, successfully <strong>reunifying</strong> the Khmer Empire under a centralized authority</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-lime-400 text-lg leading-6 shrink-0">•</span>
-              <span>Commissioned the construction of <strong>Angkor Wat</strong>, a temple mountain dedicated to the Hindu god Vishnu, symbolizing the cosmic Mount Meru</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-lime-400 text-lg leading-6 shrink-0">•</span>
-              <span>Expanded the empire's borders into modern-day <strong>Thailand, Vietnam, and Laos</strong> through aggressive military campaigns against Champa and neighboring states</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-lime-400 text-lg leading-6 shrink-0">•</span>
-              <span>Strengthened political and economic ties with <strong>China's Song Dynasty</strong>, sending numerous diplomatic missions to the imperial court</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-lime-400 text-lg leading-6 shrink-0">•</span>
-              <span>Oversaw a period of immense artistic and cultural production, with the Khmer style reaching its <strong>classical peak</strong> in architecture and bas-relief carvings</span>
-            </li>
-          </ul>
         </div>
-      </section>
 
-      {/* TIMELINE */}
-      <section className="relative z-10 max-w-7xl mx-auto px-6 py-12">
-        <Timeline events={timelineEvents} title="HISTORICAL_LOG // SURYAVARMAN_II" />
+        {/* TIMELINE */}
+        <div className="lg:col-span-7">
+          <Timeline events={timelineEvents} title="HISTORICAL_LOG // SURYAVARMAN_II" />
+        </div>
       </section>
 
       {/* FOOTER */}

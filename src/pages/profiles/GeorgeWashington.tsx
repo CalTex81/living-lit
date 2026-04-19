@@ -156,43 +156,46 @@ export default function GeorgeWashington() {
         </div>
       </section>
 
-      {/* DETAILED LEDGER */}
-      <section className="relative z-10 max-w-4xl mx-auto px-6 py-20">
-        <div className="glass-panel rounded-xl p-8 space-y-6 relative border-t-2 border-t-blue-600/60 overflow-hidden group">
-          <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-            <Globe className="w-24 h-24" />
+      {/* MAIN CONTENT GRID */}
+      <section className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* DETAILED LEDGER */}
+        <div className="lg:col-span-5">
+          <div className="glass-panel rounded-xl p-8 space-y-6 relative border-t-2 border-t-blue-600/60 overflow-hidden group h-full">
+            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+              <Globe className="w-24 h-24" />
+            </div>
+            <h2 className="font-mono text-xl text-blue-400 drop-shadow-[0_0_8px_rgba(59,130,246,0.5)] flex items-center gap-3">
+              <span className="w-2 h-2 bg-blue-500"></span> HISTORICAL_BACKGROUND
+            </h2>
+            <ul className="space-y-4 text-stone-300 font-sans text-[15px] leading-relaxed list-none">
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-blue-400 text-lg leading-6 shrink-0">•</span>
+                <span>Led the <strong>Continental Army</strong> to victory against the British Empire during the American Revolutionary War.</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-blue-400 text-lg leading-6 shrink-0">•</span>
+                <span>Established the critical precedent of <strong>peaceful transfer of power</strong> by resigning his commission and later stepping down after two terms.</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-blue-400 text-lg leading-6 shrink-0">•</span>
+                <span>Played a central role in the <strong>Constitutional Convention</strong>, ensuring the stability and legitimacy of the new federal government.</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-blue-400 text-lg leading-6 shrink-0">•</span>
+                <span>Defined the <strong>Executive Branch</strong> of the US government, setting precedents for the cabinet system and foreign policy neutrality.</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-blue-400 text-lg leading-6 shrink-0">•</span>
+                <span>Remains a global symbol of <strong>republican virtue</strong> and leadership through consensus and restraint.</span>
+              </li>
+            </ul>
           </div>
-          <h2 className="font-mono text-xl text-blue-400 drop-shadow-[0_0_8px_rgba(59,130,246,0.5)] flex items-center gap-3">
-            <span className="w-2 h-2 bg-blue-500"></span> HISTORICAL_BACKGROUND
-          </h2>
-          <ul className="space-y-4 text-stone-300 font-sans text-[15px] leading-relaxed list-none">
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-blue-400 text-lg leading-6 shrink-0">•</span>
-              <span>Led the <strong>Continental Army</strong> to victory against the British Empire during the American Revolutionary War.</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-blue-400 text-lg leading-6 shrink-0">•</span>
-              <span>Established the critical precedent of <strong>peaceful transfer of power</strong> by resigning his commission and later stepping down after two terms.</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-blue-400 text-lg leading-6 shrink-0">•</span>
-              <span>Played a central role in the <strong>Constitutional Convention</strong>, ensuring the stability and legitimacy of the new federal government.</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-blue-400 text-lg leading-6 shrink-0">•</span>
-              <span>Defined the <strong>Executive Branch</strong> of the US government, setting precedents for the cabinet system and foreign policy neutrality.</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-blue-400 text-lg leading-6 shrink-0">•</span>
-              <span>Remains a global symbol of <strong>republican virtue</strong> and leadership through consensus and restraint.</span>
-            </li>
-          </ul>
         </div>
-      </section>
 
-      {/* TIMELINE */}
-      <section className="relative z-10 max-w-7xl mx-auto px-6 py-12">
-        <Timeline events={timelineEvents} title="HISTORICAL_LOG // GEORGE_WASHINGTON" />
+        {/* TIMELINE */}
+        <div className="lg:col-span-7">
+          <Timeline events={timelineEvents} title="HISTORICAL_LOG // GEORGE_WASHINGTON" />
+        </div>
       </section>
 
       {/* FOOTER */}

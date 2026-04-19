@@ -155,43 +155,46 @@ export default function KublaiKhan() {
         </div>
       </section>
 
-      {/* DETAILED LEDGER */}
-      <section className="relative z-10 max-w-4xl mx-auto px-6 py-20">
-        <div className="glass-panel rounded-xl p-8 space-y-6 relative border-t-2 border-t-amber-600/60 overflow-hidden group">
-          <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-            <Globe className="w-24 h-24" />
+      {/* MAIN CONTENT GRID */}
+      <section className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* DETAILED LEDGER */}
+        <div className="lg:col-span-5">
+          <div className="glass-panel rounded-xl p-8 space-y-6 relative border-t-2 border-t-amber-600/60 overflow-hidden group h-full">
+            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+              <Globe className="w-24 h-24" />
+            </div>
+            <h2 className="font-mono text-xl text-amber-400 drop-shadow-[0_0_8px_rgba(245,158,11,0.5)] flex items-center gap-3">
+              <span className="w-2 h-2 bg-amber-500"></span> HISTORICAL_BACKGROUND
+            </h2>
+            <ul className="space-y-4 text-stone-300 font-sans text-[15px] leading-relaxed list-none">
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
+                <span>Successfully completed the Mongol conquest of China, becoming the first non-Han emperor to rule the entire region.</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
+                <span>Built a new capital at <strong>Dadu (modern Beijing)</strong>, designed to combine Mongol nomadic power with Chinese imperial prestige.</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
+                <span>Reorganized the imperial administration, promoting a hierarchy that favored Mongols and foreign advisors (semu-ren) while maintaining traditional Chinese bureaucracy.</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
+                <span>Introduced <strong>Chao (paper currency)</strong> as the primary medium of exchange, significantly boosting domestic trade and economic integration.</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
+                <span>His reign oversaw the height of the <strong>Pax Mongolica</strong>, a period of relative stability that allowed explorers like Marco Polo to travel safely across Eurasia.</span>
+              </li>
+            </ul>
           </div>
-          <h2 className="font-mono text-xl text-amber-400 drop-shadow-[0_0_8px_rgba(245,158,11,0.5)] flex items-center gap-3">
-            <span className="w-2 h-2 bg-amber-500"></span> HISTORICAL_BACKGROUND
-          </h2>
-          <ul className="space-y-4 text-stone-300 font-sans text-[15px] leading-relaxed list-none">
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
-              <span>Successfully completed the Mongol conquest of China, becoming the first non-Han emperor to rule the entire region.</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
-              <span>Built a new capital at <strong>Dadu (modern Beijing)</strong>, designed to combine Mongol nomadic power with Chinese imperial prestige.</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
-              <span>Reorganized the imperial administration, promoting a hierarchy that favored Mongols and foreign advisors (semu-ren) while maintaining traditional Chinese bureaucracy.</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
-              <span>Introduced <strong>Chao (paper currency)</strong> as the primary medium of exchange, significantly boosting domestic trade and economic integration.</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
-              <span>His reign oversaw the height of the <strong>Pax Mongolica</strong>, a period of relative stability that allowed explorers like Marco Polo to travel safely across Eurasia.</span>
-            </li>
-          </ul>
         </div>
-      </section>
 
-      {/* TIMELINE */}
-      <section className="relative z-10 max-w-7xl mx-auto px-6 py-12">
-        <Timeline events={timelineEvents} title="HISTORICAL_LOG // KUBLAI_KHAN" />
+        {/* TIMELINE */}
+        <div className="lg:col-span-7">
+          <Timeline events={timelineEvents} title="HISTORICAL_LOG // KUBLAI_KHAN" />
+        </div>
       </section>
 
       {/* FOOTER */}

@@ -155,43 +155,46 @@ export default function IbnBattuta() {
         </div>
       </section>
 
-      {/* DETAILED LEDGER */}
-      <section className="relative z-10 max-w-4xl mx-auto px-6 py-20">
-        <div className="glass-panel rounded-xl p-8 space-y-6 relative border-t-2 border-t-cyan-600/60 overflow-hidden group">
-          <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-            <Globe className="w-24 h-24" />
+      {/* MAIN CONTENT GRID */}
+      <section className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* DETAILED LEDGER */}
+        <div className="lg:col-span-5">
+          <div className="glass-panel rounded-xl p-8 space-y-6 relative border-t-2 border-t-cyan-600/60 overflow-hidden group h-full">
+            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+              <Globe className="w-24 h-24" />
+            </div>
+            <h2 className="font-mono text-xl text-cyan-400 drop-shadow-[0_0_8px_rgba(34,211,238,0.5)] flex items-center gap-3">
+              <span className="w-2 h-2 bg-cyan-500"></span> HISTORICAL_BACKGROUND
+            </h2>
+            <ul className="space-y-4 text-stone-300 font-sans text-[15px] leading-relaxed list-none">
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-cyan-400 text-lg leading-6 shrink-0">•</span>
+                <span>Spent 30 years traveling through <strong>Dar al-Islam</strong>, visiting West Africa, Southern Europe, Eastern Europe, the Middle East, India, Southeast Asia, and China.</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-cyan-400 text-lg leading-6 shrink-0">•</span>
+                <span>Documented the high degree of cultural and religious continuity across vast distances, unified by the common Arabic language and Islamic legal traditions.</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-cyan-400 text-lg leading-6 shrink-0">•</span>
+                <span>Observed and recorded the social structures and court customs of dozens of diverse civilizations, from the Mali Empire to the Yuan Dynasty.</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-cyan-400 text-lg leading-6 shrink-0">•</span>
+                <span>His travelogue, the <strong>Rihla</strong>, remains one of the most important primary sources for understanding the medieval world prior to the age of European global navigation.</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-cyan-400 text-lg leading-6 shrink-0">•</span>
+                <span>Traveled more than triple the distance of his contemporary Marco Polo, solidifying his status as the most extensive traveler in human history before the modern era.</span>
+              </li>
+            </ul>
           </div>
-          <h2 className="font-mono text-xl text-cyan-400 drop-shadow-[0_0_8px_rgba(34,211,238,0.5)] flex items-center gap-3">
-            <span className="w-2 h-2 bg-cyan-500"></span> HISTORICAL_BACKGROUND
-          </h2>
-          <ul className="space-y-4 text-stone-300 font-sans text-[15px] leading-relaxed list-none">
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-cyan-400 text-lg leading-6 shrink-0">•</span>
-              <span>Spent 30 years traveling through <strong>Dar al-Islam</strong>, visiting West Africa, Southern Europe, Eastern Europe, the Middle East, India, Southeast Asia, and China.</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-cyan-400 text-lg leading-6 shrink-0">•</span>
-              <span>Documented the high degree of cultural and religious continuity across vast distances, unified by the common Arabic language and Islamic legal traditions.</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-cyan-400 text-lg leading-6 shrink-0">•</span>
-              <span>Observed and recorded the social structures and court customs of dozens of diverse civilizations, from the Mali Empire to the Yuan Dynasty.</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-cyan-400 text-lg leading-6 shrink-0">•</span>
-              <span>His travelogue, the <strong>Rihla</strong>, remains one of the most important primary sources for understanding the medieval world prior to the age of European global navigation.</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-cyan-400 text-lg leading-6 shrink-0">•</span>
-              <span>Traveled more than triple the distance of his contemporary Marco Polo, solidifying his status as the most extensive traveler in human history before the modern era.</span>
-            </li>
-          </ul>
         </div>
-      </section>
 
-      {/* TIMELINE */}
-      <section className="relative z-10 max-w-7xl mx-auto px-6 py-12">
-        <Timeline events={timelineEvents} title="HISTORICAL_LOG // IBN_BATTUTA" />
+        {/* TIMELINE */}
+        <div className="lg:col-span-7">
+          <Timeline events={timelineEvents} title="HISTORICAL_LOG // IBN_BATTUTA" />
+        </div>
       </section>
 
       {/* FOOTER */}

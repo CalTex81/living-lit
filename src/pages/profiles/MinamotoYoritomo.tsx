@@ -155,43 +155,46 @@ export default function MinamotoYoritomo() {
         </div>
       </section>
 
-      {/* DETAILED LEDGER */}
-      <section className="relative z-10 max-w-4xl mx-auto px-6 py-20">
-        <div className="glass-panel rounded-xl p-8 space-y-6 relative border-t-2 border-t-indigo-600/60 overflow-hidden group">
-          <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-            <Globe className="w-24 h-24" />
+      {/* MAIN CONTENT GRID */}
+      <section className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* DETAILED LEDGER */}
+        <div className="lg:col-span-5">
+          <div className="glass-panel rounded-xl p-8 space-y-6 relative border-t-2 border-t-indigo-600/60 overflow-hidden group h-full">
+            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+              <Globe className="w-24 h-24" />
+            </div>
+            <h2 className="font-mono text-xl text-indigo-400 drop-shadow-[0_0_8px_rgba(129,140,248,0.5)] flex items-center gap-3">
+              <span className="w-2 h-2 bg-indigo-500"></span> HISTORICAL_BACKGROUND
+            </h2>
+            <ul className="space-y-4 text-stone-300 font-sans text-[15px] leading-relaxed list-none">
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-indigo-400 text-lg leading-6 shrink-0">•</span>
+                <span>Successfully led the <strong>Minamoto clan</strong> to absolute victory in the Genpei War, annihilating the rival Taira clan.</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-indigo-400 text-lg leading-6 shrink-0">•</span>
+                <span>Established the <strong>Bakufu</strong> (tent government) in Kamakura, creating a parallel military administration to the Imperial court in Kyoto.</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-indigo-400 text-lg leading-6 shrink-0">•</span>
+                <span>Formalized the <strong>feudal hierarchy</strong> of the samurai class, centering loyalty on the Shogun through the reward of land and titles.</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-indigo-400 text-lg leading-6 shrink-0">•</span>
+                <span>Consolidated power by ruthless elimination of potential rivals, including his own brothers, to ensure the stability of the Minamoto line.</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-indigo-400 text-lg leading-6 shrink-0">•</span>
+                <span>Transformed the Japanese <strong>warrior class</strong> into the ruling political elite, a structure that endured until the Meiji Restoration.</span>
+              </li>
+            </ul>
           </div>
-          <h2 className="font-mono text-xl text-indigo-400 drop-shadow-[0_0_8px_rgba(129,140,248,0.5)] flex items-center gap-3">
-            <span className="w-2 h-2 bg-indigo-500"></span> HISTORICAL_BACKGROUND
-          </h2>
-          <ul className="space-y-4 text-stone-300 font-sans text-[15px] leading-relaxed list-none">
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-indigo-400 text-lg leading-6 shrink-0">•</span>
-              <span>Successfully led the <strong>Minamoto clan</strong> to absolute victory in the Genpei War, annihilating the rival Taira clan.</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-indigo-400 text-lg leading-6 shrink-0">•</span>
-              <span>Established the <strong>Bakufu</strong> (tent government) in Kamakura, creating a parallel military administration to the Imperial court in Kyoto.</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-indigo-400 text-lg leading-6 shrink-0">•</span>
-              <span>Formalized the <strong>feudal hierarchy</strong> of the samurai class, centering loyalty on the Shogun through the reward of land and titles.</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-indigo-400 text-lg leading-6 shrink-0">•</span>
-              <span>Consolidated power by ruthless elimination of potential rivals, including his own brothers, to ensure the stability of the Minamoto line.</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-indigo-400 text-lg leading-6 shrink-0">•</span>
-              <span>Transformed the Japanese <strong>warrior class</strong> into the ruling political elite, a structure that endured until the Meiji Restoration.</span>
-            </li>
-          </ul>
         </div>
-      </section>
 
-      {/* TIMELINE */}
-      <section className="relative z-10 max-w-7xl mx-auto px-6 py-12">
-        <Timeline events={timelineEvents} title="HISTORICAL_LOG // MINAMOTO_YORITOMO" />
+        {/* TIMELINE */}
+        <div className="lg:col-span-7">
+          <Timeline events={timelineEvents} title="HISTORICAL_LOG // MINAMOTO_YORITOMO" />
+        </div>
       </section>
 
       {/* FOOTER */}

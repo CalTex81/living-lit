@@ -158,43 +158,46 @@ export default function Muhammad() {
         </div>
       </section>
 
-      {/* DETAILED LEDGER */}
-      <section className="relative z-10 max-w-4xl mx-auto px-6 py-20">
-        <div className="glass-panel rounded-xl p-8 space-y-6 relative border-t-2 border-t-sky-600/60 overflow-hidden group">
-          <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-            <Globe className="w-24 h-24" />
+      {/* MAIN CONTENT GRID */}
+      <section className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* DETAILED LEDGER */}
+        <div className="lg:col-span-5">
+          <div className="glass-panel rounded-xl p-8 space-y-6 relative border-t-2 border-t-sky-600/60 overflow-hidden group h-full">
+            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+              <Globe className="w-24 h-24" />
+            </div>
+            <h2 className="font-mono text-xl text-sky-400 drop-shadow-[0_0_8px_rgba(56,189,248,0.5)] flex items-center gap-3">
+              <span className="w-2 h-2 bg-sky-500"></span> HISTORICAL_BACKGROUND
+            </h2>
+            <ul className="space-y-4 text-stone-300 font-sans text-[15px] leading-relaxed list-none">
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-sky-400 text-lg leading-6 shrink-0">•</span>
+                <span>Born into the <strong>Quraysh tribe</strong> in Mecca, a major trading hub on the Arabian Peninsula</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-sky-400 text-lg leading-6 shrink-0">•</span>
+                <span>Received revelations beginning in <strong>610 CE</strong>, forming the basis of the <strong>Quran</strong></span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-sky-400 text-lg leading-6 shrink-0">•</span>
+                <span>The <strong>Hijra (622 CE)</strong> to Medina established the first organized Muslim community and marks the start of the Islamic calendar</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-sky-400 text-lg leading-6 shrink-0">•</span>
+                <span>Unified nearly all of the <strong>Arabian Peninsula</strong> under Islam by the time of his death in 632 CE</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-sky-400 text-lg leading-6 shrink-0">•</span>
+                <span>His successors (the <strong>Rashidun Caliphs</strong>) rapidly expanded the empire from Spain to Central Asia within a century</span>
+              </li>
+            </ul>
           </div>
-          <h2 className="font-mono text-xl text-sky-400 drop-shadow-[0_0_8px_rgba(56,189,248,0.5)] flex items-center gap-3">
-            <span className="w-2 h-2 bg-sky-500"></span> HISTORICAL_BACKGROUND
-          </h2>
-          <ul className="space-y-4 text-stone-300 font-sans text-[15px] leading-relaxed list-none">
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-sky-400 text-lg leading-6 shrink-0">•</span>
-              <span>Born into the <strong>Quraysh tribe</strong> in Mecca, a major trading hub on the Arabian Peninsula</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-sky-400 text-lg leading-6 shrink-0">•</span>
-              <span>Received revelations beginning in <strong>610 CE</strong>, forming the basis of the <strong>Quran</strong></span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-sky-400 text-lg leading-6 shrink-0">•</span>
-              <span>The <strong>Hijra (622 CE)</strong> to Medina established the first organized Muslim community and marks the start of the Islamic calendar</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-sky-400 text-lg leading-6 shrink-0">•</span>
-              <span>Unified nearly all of the <strong>Arabian Peninsula</strong> under Islam by the time of his death in 632 CE</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-sky-400 text-lg leading-6 shrink-0">•</span>
-              <span>His successors (the <strong>Rashidun Caliphs</strong>) rapidly expanded the empire from Spain to Central Asia within a century</span>
-            </li>
-          </ul>
         </div>
-      </section>
 
-      {/* TIMELINE */}
-      <section className="relative z-10 max-w-7xl mx-auto px-6 py-12">
-        <Timeline events={timelineEvents} title="HISTORICAL_LOG // MUHAMMAD" />
+        {/* TIMELINE */}
+        <div className="lg:col-span-7">
+          <Timeline events={timelineEvents} title="HISTORICAL_LOG // MUHAMMAD" />
+        </div>
       </section>
 
       {/* FOOTER */}

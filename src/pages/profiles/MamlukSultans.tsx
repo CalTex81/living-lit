@@ -156,43 +156,46 @@ export default function MamlukSultans() {
         </div>
       </section>
 
-      {/* DETAILED LEDGER */}
-      <section className="relative z-10 max-w-4xl mx-auto px-6 py-20">
-        <div className="glass-panel rounded-xl p-8 space-y-6 relative border-t-2 border-t-orange-600/60 overflow-hidden group">
-          <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-            <Globe className="w-24 h-24" />
+      {/* MAIN CONTENT GRID */}
+      <section className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* DETAILED LEDGER */}
+        <div className="lg:col-span-5">
+          <div className="glass-panel rounded-xl p-8 space-y-6 relative border-t-2 border-t-orange-600/60 overflow-hidden group h-full">
+            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+              <Globe className="w-24 h-24" />
+            </div>
+            <h2 className="font-mono text-xl text-orange-400 drop-shadow-[0_0_8px_rgba(251,146,60,0.5)] flex items-center gap-3">
+              <span className="w-2 h-2 bg-orange-500"></span> HISTORICAL_BACKGROUND
+            </h2>
+            <ul className="space-y-4 text-stone-300 font-sans text-[15px] leading-relaxed list-none">
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-orange-400 text-lg leading-6 shrink-0">•</span>
+                <span>The term <strong>Mamluk</strong> translates literally to "owned" or "property," denoting their origins as Central Asian and Caucasian military slaves</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-orange-400 text-lg leading-6 shrink-0">•</span>
+                <span>They established a highly meritocratic system where the throne wasn't strictly hereditary; sultans were often military commanders who proved their capability and secured the loyalty of the elites</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-orange-400 text-lg leading-6 shrink-0">•</span>
+                <span>Turned <strong>Cairo</strong> into the political and cultural center of the Islamic world, especially after the Mongol destruction of Baghdad in 1258 CE</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-orange-400 text-lg leading-6 shrink-0">•</span>
+                <span>Renowned for their distinct monumental <strong>architecture</strong> deeply integrating schools (madrasas), mausoleums, and hospitals, which remain central to Cairo's skyline today</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-orange-400 text-lg leading-6 shrink-0">•</span>
+                <span>Maintained dominance over vital trade networks along the Red Sea and Eastern Mediterranean until the Portuguese circumnavigated Africa, shifting global economic routes</span>
+              </li>
+            </ul>
           </div>
-          <h2 className="font-mono text-xl text-orange-400 drop-shadow-[0_0_8px_rgba(251,146,60,0.5)] flex items-center gap-3">
-            <span className="w-2 h-2 bg-orange-500"></span> HISTORICAL_BACKGROUND
-          </h2>
-          <ul className="space-y-4 text-stone-300 font-sans text-[15px] leading-relaxed list-none">
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-orange-400 text-lg leading-6 shrink-0">•</span>
-              <span>The term <strong>Mamluk</strong> translates literally to "owned" or "property," denoting their origins as Central Asian and Caucasian military slaves</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-orange-400 text-lg leading-6 shrink-0">•</span>
-              <span>They established a highly meritocratic system where the throne wasn't strictly hereditary; sultans were often military commanders who proved their capability and secured the loyalty of the elites</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-orange-400 text-lg leading-6 shrink-0">•</span>
-              <span>Turned <strong>Cairo</strong> into the political and cultural center of the Islamic world, especially after the Mongol destruction of Baghdad in 1258 CE</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-orange-400 text-lg leading-6 shrink-0">•</span>
-              <span>Renowned for their distinct monumental <strong>architecture</strong> deeply integrating schools (madrasas), mausoleums, and hospitals, which remain central to Cairo's skyline today</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-orange-400 text-lg leading-6 shrink-0">•</span>
-              <span>Maintained dominance over vital trade networks along the Red Sea and Eastern Mediterranean until the Portuguese circumnavigated Africa, shifting global economic routes</span>
-            </li>
-          </ul>
         </div>
-      </section>
 
-      {/* TIMELINE */}
-      <section className="relative z-10 max-w-7xl mx-auto px-6 py-12">
-        <Timeline events={timelineEvents} title="HISTORICAL_LOG // MAMLUK_SULTANATE" />
+        {/* TIMELINE */}
+        <div className="lg:col-span-7">
+          <Timeline events={timelineEvents} title="HISTORICAL_LOG // MAMLUK_SULTANATE" />
+        </div>
       </section>
 
       {/* FOOTER */}

@@ -157,43 +157,46 @@ export default function NasirAlDinAlTusi() {
         </div>
       </section>
 
-      {/* DETAILED LEDGER */}
-      <section className="relative z-10 max-w-4xl mx-auto px-6 py-20">
-        <div className="glass-panel rounded-xl p-8 space-y-6 relative border-t-2 border-t-violet-600/60 overflow-hidden group">
-          <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-            <Globe className="w-24 h-24" />
+      {/* MAIN CONTENT GRID */}
+      <section className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* DETAILED LEDGER */}
+        <div className="lg:col-span-5">
+          <div className="glass-panel rounded-xl p-8 space-y-6 relative border-t-2 border-t-violet-600/60 overflow-hidden group h-full">
+            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+              <Globe className="w-24 h-24" />
+            </div>
+            <h2 className="font-mono text-xl text-violet-400 drop-shadow-[0_0_8px_rgba(167,139,250,0.5)] flex items-center gap-3">
+              <span className="w-2 h-2 bg-violet-500"></span> HISTORICAL_BACKGROUND
+            </h2>
+            <ul className="space-y-4 text-stone-300 font-sans text-[15px] leading-relaxed list-none">
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-violet-400 text-lg leading-6 shrink-0">•</span>
+                <span>Born in <strong>Tus, Khorasan</strong> during the twilight of the Abbasid Caliphate, he trained across mathematics, astronomy, and philosophy</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-violet-400 text-lg leading-6 shrink-0">•</span>
+                <span>Spent decades under the patronage of the <strong>Ismaili Assassins</strong> at Alamut, producing major works in relative safety</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-violet-400 text-lg leading-6 shrink-0">•</span>
+                <span>After the Mongol conquest, became a trusted advisor to <strong>Hulagu Khan</strong>, leveraging his position to protect scholars and libraries</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-violet-400 text-lg leading-6 shrink-0">•</span>
+                <span>Founded the <strong>Maragheh Observatory (1259)</strong>, employing astronomers from across the Islamic world and even China</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-violet-400 text-lg leading-6 shrink-0">•</span>
+                <span>His mathematical work on the <strong>Tusi couple</strong> later appeared in Copernicus's models, suggesting possible transmission of ideas to Europe</span>
+              </li>
+            </ul>
           </div>
-          <h2 className="font-mono text-xl text-violet-400 drop-shadow-[0_0_8px_rgba(167,139,250,0.5)] flex items-center gap-3">
-            <span className="w-2 h-2 bg-violet-500"></span> HISTORICAL_BACKGROUND
-          </h2>
-          <ul className="space-y-4 text-stone-300 font-sans text-[15px] leading-relaxed list-none">
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-violet-400 text-lg leading-6 shrink-0">•</span>
-              <span>Born in <strong>Tus, Khorasan</strong> during the twilight of the Abbasid Caliphate, he trained across mathematics, astronomy, and philosophy</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-violet-400 text-lg leading-6 shrink-0">•</span>
-              <span>Spent decades under the patronage of the <strong>Ismaili Assassins</strong> at Alamut, producing major works in relative safety</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-violet-400 text-lg leading-6 shrink-0">•</span>
-              <span>After the Mongol conquest, became a trusted advisor to <strong>Hulagu Khan</strong>, leveraging his position to protect scholars and libraries</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-violet-400 text-lg leading-6 shrink-0">•</span>
-              <span>Founded the <strong>Maragheh Observatory (1259)</strong>, employing astronomers from across the Islamic world and even China</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-violet-400 text-lg leading-6 shrink-0">•</span>
-              <span>His mathematical work on the <strong>Tusi couple</strong> later appeared in Copernicus's models, suggesting possible transmission of ideas to Europe</span>
-            </li>
-          </ul>
         </div>
-      </section>
 
-      {/* TIMELINE */}
-      <section className="relative z-10 max-w-7xl mx-auto px-6 py-12">
-        <Timeline events={timelineEvents} title="HISTORICAL_LOG // NASIR_AL_DIN_AL_TUSI" />
+        {/* TIMELINE */}
+        <div className="lg:col-span-7">
+          <Timeline events={timelineEvents} title="HISTORICAL_LOG // NASIR_AL_DIN_AL_TUSI" />
+        </div>
       </section>
 
       {/* FOOTER */}

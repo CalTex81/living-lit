@@ -156,43 +156,46 @@ export default function MarcoPolo() {
         </div>
       </section>
 
-      {/* DETAILED LEDGER */}
-      <section className="relative z-10 max-w-4xl mx-auto px-6 py-20">
-        <div className="glass-panel rounded-xl p-8 space-y-6 relative border-t-2 border-t-amber-600/60 overflow-hidden group">
-          <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-            <Globe className="w-24 h-24" />
+      {/* MAIN CONTENT GRID */}
+      <section className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* DETAILED LEDGER */}
+        <div className="lg:col-span-5">
+          <div className="glass-panel rounded-xl p-8 space-y-6 relative border-t-2 border-t-amber-600/60 overflow-hidden group h-full">
+            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+              <Globe className="w-24 h-24" />
+            </div>
+            <h2 className="font-mono text-xl text-amber-400 drop-shadow-[0_0_8px_rgba(251,191,36,0.5)] flex items-center gap-3">
+              <span className="w-2 h-2 bg-amber-500"></span> HISTORICAL_BACKGROUND
+            </h2>
+            <ul className="space-y-4 text-stone-300 font-sans text-[15px] leading-relaxed list-none">
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
+                <span>Traveled over <strong>15,000 miles</strong> through the Middle East, Central Asia, and China over a span of 24 years.</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
+                <span>Gained the confidence of <strong>Kublai Khan</strong>, serving as a trusted administrator and emissary across the Mongol Empire.</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
+                <span>Introduced Europe to concepts such as <strong>paper money</strong>, coal, postal services, and advanced maritime technology.</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
+                <span>His book, <strong>"Il Milione"</strong>, inspired later explorers like Christopher Columbus to seek oceanic routes to the East.</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
+                <span>Played a pivotal role in bridging the <strong>cultural divide</strong> between Medieval Europe and the thriving civilizations of Asia.</span>
+              </li>
+            </ul>
           </div>
-          <h2 className="font-mono text-xl text-amber-400 drop-shadow-[0_0_8px_rgba(251,191,36,0.5)] flex items-center gap-3">
-            <span className="w-2 h-2 bg-amber-500"></span> HISTORICAL_BACKGROUND
-          </h2>
-          <ul className="space-y-4 text-stone-300 font-sans text-[15px] leading-relaxed list-none">
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
-              <span>Traveled over <strong>15,000 miles</strong> through the Middle East, Central Asia, and China over a span of 24 years.</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
-              <span>Gained the confidence of <strong>Kublai Khan</strong>, serving as a trusted administrator and emissary across the Mongol Empire.</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
-              <span>Introduced Europe to concepts such as <strong>paper money</strong>, coal, postal services, and advanced maritime technology.</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
-              <span>His book, <strong>"Il Milione"</strong>, inspired later explorers like Christopher Columbus to seek oceanic routes to the East.</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
-              <span>Played a pivotal role in bridging the <strong>cultural divide</strong> between Medieval Europe and the thriving civilizations of Asia.</span>
-            </li>
-          </ul>
         </div>
-      </section>
 
-      {/* TIMELINE */}
-      <section className="relative z-10 max-w-7xl mx-auto px-6 py-12">
-        <Timeline events={timelineEvents} title="HISTORICAL_LOG // MARCO_POLO" />
+        {/* TIMELINE */}
+        <div className="lg:col-span-7">
+          <Timeline events={timelineEvents} title="HISTORICAL_LOG // MARCO_POLO" />
+        </div>
       </section>
 
       {/* FOOTER */}

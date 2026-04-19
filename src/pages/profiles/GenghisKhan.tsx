@@ -156,43 +156,46 @@ export default function GenghisKhan() {
         </div>
       </section>
 
-      {/* DETAILED LEDGER */}
-      <section className="relative z-10 max-w-4xl mx-auto px-6 py-20">
-        <div className="glass-panel rounded-xl p-8 space-y-6 relative border-t-2 border-t-rose-600/60 overflow-hidden group">
-          <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-            <Globe className="w-24 h-24" />
+      {/* MAIN CONTENT GRID */}
+      <section className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* DETAILED LEDGER */}
+        <div className="lg:col-span-5">
+          <div className="glass-panel rounded-xl p-8 space-y-6 relative border-t-2 border-t-rose-600/60 overflow-hidden group h-full">
+            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+              <Globe className="w-24 h-24" />
+            </div>
+            <h2 className="font-mono text-xl text-rose-400 drop-shadow-[0_0_8px_rgba(225,29,72,0.5)] flex items-center gap-3">
+              <span className="w-2 h-2 bg-rose-500"></span> HISTORICAL_BACKGROUND
+            </h2>
+            <ul className="space-y-4 text-stone-300 font-sans text-[15px] leading-relaxed list-none">
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-rose-400 text-lg leading-6 shrink-0">•</span>
+                <span>Unified the warring <strong>nomadic tribes</strong> of the Mongolian plateau through strategic alliances and military brilliance.</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-rose-400 text-lg leading-6 shrink-0">•</span>
+                <span>Implemented a <strong>meritocratic military system</strong>, promoting commanders based on skill and loyalty rather than noble birth.</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-rose-400 text-lg leading-6 shrink-0">•</span>
+                <span>Established the <strong>Yassa code</strong> of laws to maintain order and the 'Yam' international postal system to facilitate communication.</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-rose-400 text-lg leading-6 shrink-0">•</span>
+                <span>Promoted <strong>religious tolerance</strong> and the free exchange of ideas, technologies, and goods along the Silk Road.</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-rose-400 text-lg leading-6 shrink-0">•</span>
+                <span>His conquests paved the way for the <strong>Pax Mongolica</strong>, a period of relative peace and stability across much of Eurasia.</span>
+              </li>
+            </ul>
           </div>
-          <h2 className="font-mono text-xl text-rose-400 drop-shadow-[0_0_8px_rgba(225,29,72,0.5)] flex items-center gap-3">
-            <span className="w-2 h-2 bg-rose-500"></span> HISTORICAL_BACKGROUND
-          </h2>
-          <ul className="space-y-4 text-stone-300 font-sans text-[15px] leading-relaxed list-none">
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-rose-400 text-lg leading-6 shrink-0">•</span>
-              <span>Unified the warring <strong>nomadic tribes</strong> of the Mongolian plateau through strategic alliances and military brilliance.</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-rose-400 text-lg leading-6 shrink-0">•</span>
-              <span>Implemented a <strong>meritocratic military system</strong>, promoting commanders based on skill and loyalty rather than noble birth.</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-rose-400 text-lg leading-6 shrink-0">•</span>
-              <span>Established the <strong>Yassa code</strong> of laws to maintain order and the 'Yam' international postal system to facilitate communication.</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-rose-400 text-lg leading-6 shrink-0">•</span>
-              <span>Promoted <strong>religious tolerance</strong> and the free exchange of ideas, technologies, and goods along the Silk Road.</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-rose-400 text-lg leading-6 shrink-0">•</span>
-              <span>His conquests paved the way for the <strong>Pax Mongolica</strong>, a period of relative peace and stability across much of Eurasia.</span>
-            </li>
-          </ul>
         </div>
-      </section>
 
-      {/* TIMELINE */}
-      <section className="relative z-10 max-w-7xl mx-auto px-6 py-12">
-        <Timeline events={timelineEvents} title="HISTORICAL_LOG // GENGHIS_KHAN" />
+        {/* TIMELINE */}
+        <div className="lg:col-span-7">
+          <Timeline events={timelineEvents} title="HISTORICAL_LOG // GENGHIS_KHAN" />
+        </div>
       </section>
 
       {/* FOOTER */}

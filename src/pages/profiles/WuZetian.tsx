@@ -157,39 +157,42 @@ export default function WuZetian() {
         </div>
       </section>
 
-      {/* DETAILED LEDGER */}
-      <section className="relative z-10 max-w-4xl mx-auto px-6 py-20">
-        <div className="glass-panel rounded-xl p-8 space-y-6 relative border-t-2 border-t-amber-600/60 overflow-hidden group">
-          <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-            <Globe className="w-24 h-24" />
+      {/* MAIN CONTENT GRID */}
+      <section className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* DETAILED LEDGER */}
+        <div className="lg:col-span-5">
+          <div className="glass-panel rounded-xl p-8 space-y-6 relative border-t-2 border-t-amber-600/60 overflow-hidden group h-full">
+            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+              <Globe className="w-24 h-24" />
+            </div>
+            <h2 className="font-mono text-xl text-amber-400 drop-shadow-[0_0_8px_rgba(251,191,36,0.5)] flex items-center gap-3">
+              <span className="w-2 h-2 bg-amber-500"></span> HISTORICAL_BACKGROUND
+            </h2>
+            <ul className="space-y-4 text-stone-300 font-sans text-[15px] leading-relaxed list-none">
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
+                <span>Entered Emperor Taizong's court at age 14 as a low-ranking concubine</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
+                <span>After Taizong's death, was recalled from a nunnery by <strong>Emperor Gaozong</strong></span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
+                <span>Outmaneuvered rivals to become <strong>Empress Consort</strong>, then ruled behind the throne as Gaozong's health failed</span>
+              </li>
+              <li className="flex items-start gap-3 pl-1">
+                <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
+                <span>In <strong>690 CE</strong>, formally declared herself Emperor and founded the <strong>Zhou Dynasty</strong> — the only woman to hold this title</span>
+              </li>
+            </ul>
           </div>
-          <h2 className="font-mono text-xl text-amber-400 drop-shadow-[0_0_8px_rgba(251,191,36,0.5)] flex items-center gap-3">
-            <span className="w-2 h-2 bg-amber-500"></span> HISTORICAL_BACKGROUND
-          </h2>
-          <ul className="space-y-4 text-stone-300 font-sans text-[15px] leading-relaxed list-none">
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
-              <span>Entered Emperor Taizong's court at age 14 as a low-ranking concubine</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
-              <span>After Taizong's death, was recalled from a nunnery by <strong>Emperor Gaozong</strong></span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
-              <span>Outmaneuvered rivals to become <strong>Empress Consort</strong>, then ruled behind the throne as Gaozong's health failed</span>
-            </li>
-            <li className="flex items-start gap-3 pl-1">
-              <span className="text-amber-400 text-lg leading-6 shrink-0">•</span>
-              <span>In <strong>690 CE</strong>, formally declared herself Emperor and founded the <strong>Zhou Dynasty</strong> — the only woman to hold this title</span>
-            </li>
-          </ul>
         </div>
-      </section>
 
-      {/* TIMELINE */}
-      <section className="relative z-10 max-w-7xl mx-auto px-6 py-12">
-        <Timeline events={timelineEvents} title="HISTORICAL_LOG // WU_ZETIAN" />
+        {/* TIMELINE */}
+        <div className="lg:col-span-7">
+          <Timeline events={timelineEvents} title="HISTORICAL_LOG // WU_ZETIAN" />
+        </div>
       </section>
 
       {/* FOOTER */}
