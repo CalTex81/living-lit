@@ -139,6 +139,96 @@ const records: Record[] = [
     accentBorder: "hover:border-orange-500/50",
     accentShadow: "hover:shadow-[0_0_30px_rgba(251,146,60,0.15)]",
     accentText: "group-hover:text-orange-400"
+  },
+  {
+    id: "yoritomo",
+    name: "Minamoto Yoritomo",
+    subtitle: "The First Shogun",
+    era: "Kamakura Japan",
+    years: "1147-1199",
+    region: "Asia",
+    flag: "🇯🇵",
+    image: "/Miramoto Yoritomo.png",
+    path: "/yoritomo",
+    accentBg: "bg-indigo-500/10",
+    accentBorder: "hover:border-indigo-500/50",
+    accentShadow: "hover:shadow-[0_0_30px_rgba(129,140,248,0.15)]",
+    accentText: "group-hover:text-indigo-400"
+  },
+  {
+    id: "genghis",
+    name: "Genghis Khan",
+    subtitle: "Universal Ruler",
+    era: "Mongol Empire",
+    years: "1162-1227",
+    region: "Asia",
+    flag: "🌏",
+    image: "/Genghis Khan.png",
+    path: "/genghiskhan",
+    accentBg: "bg-rose-600/10",
+    accentBorder: "hover:border-rose-600/50",
+    accentShadow: "hover:shadow-[0_0_30px_rgba(225,29,72,0.15)]",
+    accentText: "group-hover:text-rose-400"
+  },
+  {
+    id: "kublaikhan",
+    name: "Kublai Khan",
+    subtitle: "Founder of Yuan Dynasty",
+    era: "Yuan Dynasty",
+    years: "1215-1294",
+    region: "Asia",
+    flag: "🌏",
+    image: "/Kublai Khan.png",
+    path: "/kublaikhan",
+    accentBg: "bg-amber-600/10",
+    accentBorder: "hover:border-amber-600/50",
+    accentShadow: "hover:shadow-[0_0_30px_rgba(217,119,6,0.15)]",
+    accentText: "group-hover:text-amber-500"
+  },
+  {
+    id: "polo",
+    name: "Marco Polo",
+    subtitle: "The Silk Road Envoy",
+    era: "Medieval Europe / Yuan China",
+    years: "1254-1324",
+    region: "Europe",
+    flag: "🇮🇹",
+    image: "/Marco Polo.png",
+    path: "/marcopolo",
+    accentBg: "bg-amber-500/10",
+    accentBorder: "hover:border-amber-500/50",
+    accentShadow: "hover:shadow-[0_0_30px_rgba(251,191,36,0.15)]",
+    accentText: "group-hover:text-amber-400"
+  },
+  {
+    id: "washington",
+    name: "George Washington",
+    subtitle: "Father of His Country",
+    era: "Revolutionary Era",
+    years: "1732-1799",
+    region: "North America",
+    flag: "🇺🇸",
+    image: "/George Washington.png",
+    path: "/washington",
+    accentBg: "bg-blue-600/10",
+    accentBorder: "hover:border-blue-600/50",
+    accentShadow: "hover:shadow-[0_0_30px_rgba(37,99,235,0.15)]",
+    accentText: "group-hover:text-blue-400"
+  },
+  {
+    id: "ibnbattuta",
+    name: "Ibn Battuta",
+    subtitle: "The Greatest Traveler",
+    era: "Islamic World",
+    years: "1304-1369",
+    region: "Africa",
+    flag: "🌍",
+    image: "/Ibn Battuta.png",
+    path: "/ibnbattuta",
+    accentBg: "bg-cyan-500/10",
+    accentBorder: "hover:border-cyan-500/50",
+    accentShadow: "hover:shadow-[0_0_30px_rgba(6,182,212,0.15)]",
+    accentText: "group-hover:text-cyan-400"
   }
 ];
 
@@ -171,10 +261,10 @@ export default function Home() {
 
       {/* HEADER */}
       <header className="fixed top-0 left-0 right-0 h-14 bg-stone-950/80 backdrop-blur-md border-b border-stone-800 z-40 flex items-center px-6 justify-between text-xs font-mono">
-        <div className="flex items-center gap-3 text-stone-400">
+        <Link to="/" className="flex items-center gap-3 text-stone-400 hover:text-rose-400 transition-colors">
           <Terminal className="w-4 h-4 text-rose-500" />
           <span>AP_WORLD_HIST_DB // v2.05</span>
-        </div>
+        </Link>
         <div className="flex items-center gap-4 text-stone-500">
           SYSTEM_READY
         </div>
@@ -307,28 +397,6 @@ export default function Home() {
                     </motion.div>
                   ))}
 
-                  {/* LOCKED CARD PLACEHOLDER */}
-                  <motion.div 
-                    layout
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.35 }}
-                  >
-                    <div className="glass-panel overflow-hidden rounded-xl border border-stone-800/50 opacity-40 relative h-80 flex items-end cursor-not-allowed">
-                      <div className="absolute inset-0 tech-grid-dots opacity-10"></div>
-                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-stone-600 font-mono text-sm flex flex-col items-center gap-2">
-                         <Shield className="w-8 h-8 opacity-20" />
-                         LOCKED_RECORD
-                      </div>
-                      <div className="relative z-20 p-6 w-full">
-                        <div className="flex items-center justify-between mb-4">
-                          <span className="font-mono text-xs text-stone-600 bg-stone-800/50 px-2 py-1 rounded">{group.flag} {group.region}</span>
-                        </div>
-                        <h3 className="font-sans text-2xl font-bold text-stone-600 mb-1">Unidentified</h3>
-                        <p className="font-mono text-xs text-stone-600 mb-4">Requires Expansion</p>
-                      </div>
-                    </div>
-                  </motion.div>
                 </div>
               </motion.div>
             ))}

@@ -58,7 +58,7 @@ export default function MamlukSultans() {
       {/* GLOBAL HEADER */}
       <header className="fixed top-0 left-0 right-0 h-14 bg-stone-950/80 backdrop-blur-md border-b border-stone-800 z-40 flex items-center px-6 justify-between text-xs font-mono">
         <div className="flex items-center gap-6">
-          <Link to="/" className="text-stone-500 hover:text-orange-400 transition-colors flex items-center gap-2">
+          <Link to="/archive" className="text-stone-500 hover:text-orange-400 transition-colors flex items-center gap-2">
             ◀ RETURN TO ARCHIVE
           </Link>
           <div className="hidden md:flex items-center gap-3 text-stone-400 border-l border-stone-800 pl-6">
@@ -106,7 +106,7 @@ export default function MamlukSultans() {
               <img
                 src="/Mamluk Sultans.png"
                 alt="Mamluk Sultans"
-                className="w-[120%] md:w-[140%] xl:w-[150%] max-w-none h-auto max-h-[95vh] object-contain drop-shadow-[0_0_45px_rgba(251,146,60,0.5)] relative z-20"
+                className="w-[110%] sm:w-[125%] md:w-[135%] lg:w-[145%] xl:w-[160%] 2xl:w-[180%] max-w-none h-auto max-h-[95vh] object-contain drop-shadow-[0_0_45px_rgba(251,146,60,0.5)] relative z-20"
               />
             </motion.div>
 
