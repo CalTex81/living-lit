@@ -14,6 +14,8 @@ import GeorgeWashington from './pages/profiles/GeorgeWashington';
 import MinamotoYoritomo from './pages/profiles/MinamotoYoritomo';
 import KublaiKhan from './pages/profiles/KublaiKhan';
 import IbnBattuta from './pages/profiles/IbnBattuta';
+import ZhengHe from './pages/profiles/ZhengHe';
+import MahatmaGandhi from './pages/profiles/MahatmaGandhi';
 import Landing from './pages/Landing';
 import Home from './pages/Home';
 
@@ -37,6 +39,8 @@ export default function App() {
         <Route path="/yoritomo" element={<MinamotoYoritomo />} />
         <Route path="/kublaikhan" element={<KublaiKhan />} />
         <Route path="/ibnbattuta" element={<IbnBattuta />} />
+        <Route path="/zhenghe" element={<ZhengHe />} />
+        <Route path="/gandhi" element={<MahatmaGandhi />} />
       </Routes>
     </BrowserRouter>
   );

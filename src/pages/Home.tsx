@@ -229,6 +229,36 @@ const records: Record[] = [
     accentBorder: "hover:border-cyan-500/50",
     accentShadow: "hover:shadow-[0_0_30px_rgba(6,182,212,0.15)]",
     accentText: "group-hover:text-cyan-400"
+  },
+  {
+    id: "zhenghe",
+    name: "Zheng He",
+    subtitle: "The Star Fleet Commander",
+    era: "Ming Dynasty",
+    years: "1371-1433",
+    region: "Asia",
+    flag: "🌏",
+    image: "/Zhenge.png",
+    path: "/zhenghe",
+    accentBg: "bg-sky-500/10",
+    accentBorder: "hover:border-sky-500/50",
+    accentShadow: "hover:shadow-[0_0_30px_rgba(56,189,248,0.15)]",
+    accentText: "group-hover:text-sky-400"
+  },
+  {
+    id: "gandhi",
+    name: "Mahatma Gandhi",
+    subtitle: "Apostle of Non-Violence",
+    era: "Modern India",
+    years: "1869-1948",
+    region: "Asia",
+    flag: "🇮🇳",
+    image: "/Mahatma Ghandi.png",
+    path: "/gandhi",
+    accentBg: "bg-orange-500/10",
+    accentBorder: "hover:border-orange-500/50",
+    accentShadow: "hover:shadow-[0_0_30px_rgba(251,146,60,0.15)]",
+    accentText: "group-hover:text-orange-400"
   }
 ];
 
