@@ -20,20 +20,8 @@ export default function TheNurse() {
       <main className="relative z-10 pt-24 px-6 pb-20 max-w-7xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="space-y-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/30 text-green-400 px-4 py-2 rounded-full text-xs font-mono uppercase tracking-widest">
-                <Heart className="w-4 h-4" />
-                Loyal Confidante
-              </div>
-              <h1 className="font-sans text-6xl md:text-7xl font-black text-white uppercase tracking-tight">The Nurse</h1>
-              <p className="font-mono text-lg text-green-400">Juliet's Personal Attendant</p>
-              <div className="flex items-center gap-6 text-sm font-mono text-stone-400">
-                <div className="flex items-center gap-2"><Clock className="w-4 h-4" /><span>Verona, 16th Century</span></div>
-                <div className="flex items-center gap-2"><MapPin className="w-4 h-4" /><span>Capulet Household</span></div>
-              </div>
-            </div>
             <div className="relative">
-              <div className="aspect-square bg-green-500/5 rounded-2xl border-2 border-green-500/20 backdrop-blur-sm flex items-center justify-center overflow-hidden">
+              <div className="aspect-square flex items-center justify-center overflow-hidden">
                 <div className="text-center">
                   <p className="font-mono text-xs text-green-500/50 uppercase tracking-widest">
                     Character Portrait
@@ -58,6 +46,18 @@ export default function TheNurse() {
                     <span className="text-green-400 ml-2">Alive</span>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div className="space-y-6">
+              <div className="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/30 text-green-400 px-4 py-2 rounded-full text-xs font-mono uppercase tracking-widest">
+                <Heart className="w-4 h-4" />
+                Loyal Confidante
+              </div>
+              <h1 className="font-sans text-6xl md:text-7xl font-black text-white uppercase tracking-tight">The Nurse</h1>
+              <p className="font-mono text-lg text-green-400">Juliet's Personal Attendant</p>
+              <div className="flex items-center gap-6 text-sm font-mono text-stone-400">
+                <div className="flex items-center gap-2"><Clock className="w-4 h-4" /><span>Verona, 16th Century</span></div>
+                <div className="flex items-center gap-2"><MapPin className="w-4 h-4" /><span>Capulet Household</span></div>
               </div>
             </div>
           </div>
