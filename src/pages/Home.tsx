@@ -22,372 +22,116 @@ type Record = {
 
 const records: Record[] = [
   {
-    id: "taizu",
-    name: "Emperor Taizu",
-    subtitle: "Zhao Kuangyin",
-    era: "Song Dynasty",
-    years: "960-976",
-    region: "Asia",
-    flag: "🌏",
-    image: "/Emperor Taizu.png",
-    path: "/taizu",
-    accentBg: "bg-rose-500/10",
-    accentBorder: "hover:border-rose-500/50",
-    accentShadow: "hover:shadow-[0_0_30px_rgba(225,29,72,0.15)]",
-    accentText: "group-hover:text-rose-400",
-    dateAdded: "2025-04-19"
-  },
-  {
-    id: "zhuxi",
-    name: "Zhu Xi",
-    subtitle: "The Great Synthesizer",
-    era: "Song Dynasty",
-    years: "1130-1200",
-    region: "Asia",
-    flag: "🌏",
-    image: "/Zhu Xi.png",
-    path: "/zhuxi",
-    accentBg: "bg-emerald-500/10",
-    accentBorder: "hover:border-emerald-500/50",
-    accentShadow: "hover:shadow-[0_0_30px_rgba(16,185,129,0.15)]",
-    accentText: "group-hover:text-emerald-400",
-    dateAdded: "2025-04-19"
-  },
-  {
-    id: "wuzetian",
-    name: "Wu Zetian",
-    subtitle: "Empress Regnant of China",
-    era: "Tang / Zhou Dynasty",
-    years: "690-705",
-    region: "Asia",
-    flag: "🌏",
-    image: "/Empress Wu Zetian.png",
-    path: "/wuzetian",
-    accentBg: "bg-amber-500/10",
-    accentBorder: "hover:border-amber-500/50",
-    accentShadow: "hover:shadow-[0_0_30px_rgba(251,191,36,0.15)]",
-    accentText: "group-hover:text-amber-400",
-    dateAdded: "2025-04-19"
-  },
-  {
-    id: "suryavarman",
-    name: "Suryavarman II",
-    subtitle: "Architect of Angkor Wat",
-    era: "Angkorian Period",
-    years: "1113-1150",
-    region: "Asia",
-    flag: "🇰🇭",
-    image: "/Suryavarman II.png",
-    path: "/suryavarman",
-    accentBg: "bg-lime-500/10",
-    accentBorder: "hover:border-lime-500/50",
-    accentShadow: "hover:shadow-[0_0_30px_rgba(163,230,53,0.15)]",
-    accentText: "group-hover:text-lime-400",
-    dateAdded: "2025-04-19"
-  },
-  {
-    id: "muhammad",
-    name: "Muhammad",
-    subtitle: "Prophet of Islam",
-    era: "Early Islamic Period",
-    years: "570-632",
-    region: "Middle East",
-    flag: "🕌",
-    image: "/Muhammad Ibn Abdullah.png",
-    path: "/muhammad",
-    accentBg: "bg-sky-500/10",
-    accentBorder: "hover:border-sky-500/50",
-    accentShadow: "hover:shadow-[0_0_30px_rgba(56,189,248,0.15)]",
-    accentText: "group-hover:text-sky-400",
-    dateAdded: "2025-04-19"
-  },
-  {
-    id: "al-tusi",
-    name: "Nasir al-Din al-Tusi",
-    subtitle: "The Polymath of Maragheh",
-    era: "Mongol Ilkhanate",
-    years: "1201-1274",
-    region: "Middle East",
-    flag: "🕌",
-    image: "/Nasir al-Din al-Tusi.png",
-    path: "/al-tusi",
-    accentBg: "bg-violet-500/10",
-    accentBorder: "hover:border-violet-500/50",
-    accentShadow: "hover:shadow-[0_0_30px_rgba(167,139,250,0.15)]",
-    accentText: "group-hover:text-violet-400",
-    dateAdded: "2025-04-19"
-  },
-  {
-    id: "bauniyyah",
-    name: "Aishah al-Ba'uniyyah",
-    subtitle: "Sufi Master & Poet",
-    era: "Mamluk Sultanate",
-    years: "1460-1517",
-    region: "Middle East",
-    flag: "🕌",
-    image: "/Aishah al-Ba'uniyyah.png",
-    path: "/bauniyyah",
-    accentBg: "bg-teal-500/10",
-    accentBorder: "hover:border-teal-500/50",
-    accentShadow: "hover:shadow-[0_0_30px_rgba(45,212,191,0.15)]",
-    accentText: "group-hover:text-teal-400",
-    dateAdded: "2025-04-19"
-  },
-  {
-    id: "mamluks",
-    name: "Mamluk Sultans",
-    subtitle: "Defenders of the Levant",
-    era: "Mamluk Sultanate",
-    years: "1250-1517",
-    region: "Middle East",
-    flag: "🕌",
-    image: "/Mamluk Sultans.png",
-    path: "/mamluks",
-    accentBg: "bg-orange-500/10",
-    accentBorder: "hover:border-orange-500/50",
-    accentShadow: "hover:shadow-[0_0_30px_rgba(251,146,60,0.15)]",
-    accentText: "group-hover:text-orange-400",
-    dateAdded: "2025-04-19"
-  },
-  {
-    id: "yoritomo",
-    name: "Minamoto Yoritomo",
-    subtitle: "The First Shogun",
-    era: "Kamakura Japan",
-    years: "1147-1199",
-    region: "Asia",
-    flag: "🇯🇵",
-    image: "/Miramoto Yoritomo.png",
-    path: "/yoritomo",
-    accentBg: "bg-indigo-500/10",
-    accentBorder: "hover:border-indigo-500/50",
-    accentShadow: "hover:shadow-[0_0_30px_rgba(129,140,248,0.15)]",
-    accentText: "group-hover:text-indigo-400",
-    dateAdded: "2025-04-19"
-  },
-  {
-    id: "genghis",
-    name: "Genghis Khan",
-    subtitle: "Universal Ruler",
-    era: "Mongol Empire",
-    years: "1162-1227",
-    region: "Asia",
-    flag: "🌏",
-    image: "/Genghis Khan.png",
-    path: "/genghiskhan",
-    accentBg: "bg-rose-600/10",
-    accentBorder: "hover:border-rose-600/50",
-    accentShadow: "hover:shadow-[0_0_30px_rgba(225,29,72,0.15)]",
-    accentText: "group-hover:text-rose-400",
-    dateAdded: "2025-04-19"
-  },
-  {
-    id: "kublaikhan",
-    name: "Kublai Khan",
-    subtitle: "Founder of Yuan Dynasty",
-    era: "Yuan Dynasty",
-    years: "1215-1294",
-    region: "Asia",
-    flag: "🌏",
-    image: "/Kublai Khan.png",
-    path: "/kublaikhan",
-    accentBg: "bg-amber-600/10",
-    accentBorder: "hover:border-amber-600/50",
-    accentShadow: "hover:shadow-[0_0_30px_rgba(217,119,6,0.15)]",
-    accentText: "group-hover:text-amber-500",
-    dateAdded: "2025-04-19"
-  },
-  {
-    id: "polo",
-    name: "Marco Polo",
-    subtitle: "The Silk Road Envoy",
-    era: "Medieval Europe / Yuan China",
-    years: "1254-1324",
-    region: "Europe",
-    flag: "🇮🇹",
-    image: "/Marco Polo.png",
-    path: "/marcopolo",
-    accentBg: "bg-amber-500/10",
-    accentBorder: "hover:border-amber-500/50",
-    accentShadow: "hover:shadow-[0_0_30px_rgba(251,191,36,0.15)]",
-    accentText: "group-hover:text-amber-400",
-    dateAdded: "2025-04-19"
-  },
-  {
-    id: "washington",
-    name: "George Washington",
-    subtitle: "Father of His Country",
-    era: "Revolutionary Era",
-    years: "1732-1799",
-    region: "North America",
-    flag: "🇺🇸",
-    image: "/George Washington.png",
-    path: "/washington",
-    accentBg: "bg-blue-600/10",
-    accentBorder: "hover:border-blue-600/50",
-    accentShadow: "hover:shadow-[0_0_30px_rgba(37,99,235,0.15)]",
-    accentText: "group-hover:text-blue-400",
-    dateAdded: "2025-04-19"
-  },
-  {
-    id: "ibnbattuta",
-    name: "Ibn Battuta",
-    subtitle: "The Greatest Traveler",
-    era: "Islamic World",
-    years: "1304-1369",
-    region: "Africa",
-    flag: "🌍",
-    image: "/Ibn Battuta.png",
-    path: "/ibnbattuta",
-    accentBg: "bg-cyan-500/10",
-    accentBorder: "hover:border-cyan-500/50",
-    accentShadow: "hover:shadow-[0_0_30px_rgba(6,182,212,0.15)]",
-    accentText: "group-hover:text-cyan-400",
-    dateAdded: "2025-04-19"
-  },
-  {
-    id: "zhenghe",
-    name: "Zheng He",
-    subtitle: "The Star Fleet Commander",
-    era: "Ming Dynasty",
-    years: "1371-1433",
-    region: "Asia",
-    flag: "🌏",
-    image: "/Zhenge.png",
-    path: "/zhenghe",
-    accentBg: "bg-sky-500/10",
-    accentBorder: "hover:border-sky-500/50",
-    accentShadow: "hover:shadow-[0_0_30px_rgba(56,189,248,0.15)]",
-    accentText: "group-hover:text-sky-400",
-    dateAdded: "2025-04-19"
-  },
-  {
-    id: "gandhi",
-    name: "Mahatma Gandhi",
-    subtitle: "Apostle of Non-Violence",
-    era: "Modern India",
-    years: "1869-1948",
-    region: "Asia",
-    flag: "🇮🇳",
-    image: "/Mahatma Ghandi.png",
-    path: "/gandhi",
-    accentBg: "bg-orange-500/10",
-    accentBorder: "hover:border-orange-500/50",
-    accentShadow: "hover:shadow-[0_0_30px_rgba(251,146,60,0.15)]",
-    accentText: "group-hover:text-orange-400",
-    dateAdded: "2025-04-19"
-  },
-  {
-    id: "urcachillay",
-    name: "Urcachillay",
-    subtitle: "Inca Deity of Herds",
-    era: "Inca Empire",
-    years: "Pre-Columbian",
-    region: "South America",
-    flag: "🇵🇪",
-    image: "/Urcachillay.png",
-    path: "/urcachillay",
-    accentBg: "bg-fuchsia-500/10",
-    accentBorder: "hover:border-fuchsia-500/50",
-    accentShadow: "hover:shadow-[0_0_30px_rgba(217,70,239,0.15)]",
-    accentText: "group-hover:text-fuchsia-400",
-    dateAdded: "2025-04-19"
-  },
-  {
-    id: "alrazi",
-    name: "Al-Razi",
-    subtitle: "The Great Physician",
-    era: "Islamic Golden Age",
-    years: "854-925",
-    region: "Middle East",
-    flag: "🕌",
-    image: "/Al Razi.png",
-    path: "/alrazi",
-    accentBg: "bg-purple-500/10",
-    accentBorder: "hover:border-purple-500/50",
-    accentShadow: "hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]",
-    accentText: "group-hover:text-purple-400",
-    dateAdded: "2025-04-19"
-  },
-  {
-    id: "mansamusa",
-    name: "Mansa Musa",
-    subtitle: "The Wealthiest Man in History",
-    era: "Mali Empire",
-    years: "1280-1337",
-    region: "Africa",
-    flag: "🌍",
-    image: "/Mansa Musa.png",
-    path: "/mansamusa",
-    accentBg: "bg-yellow-500/10",
-    accentBorder: "hover:border-yellow-500/50",
-    accentShadow: "hover:shadow-[0_0_30px_rgba(234,179,8,0.15)]",
-    accentText: "group-hover:text-yellow-400",
-    dateAdded: "2025-04-19"
-  },
-  {
-    id: "sundiata",
-    name: "Sundiata Keita",
-    subtitle: "The Lion King",
-    era: "Mali Empire",
-    years: "1217-1255",
-    region: "Africa",
-    flag: "🌍",
-    image: "/Sundiata Keita.png",
-    path: "/sundiata",
+    id: "romeo",
+    name: "Romeo",
+    subtitle: "Son of Lord Montague",
+    era: "Montague Family",
+    years: "16-17 years",
+    region: "Montague",
+    flag: "�",
+    image: "/Romeo.png",
+    path: "/romeo",
     accentBg: "bg-green-500/10",
     accentBorder: "hover:border-green-500/50",
     accentShadow: "hover:shadow-[0_0_30px_rgba(34,197,94,0.15)]",
     accentText: "group-hover:text-green-400",
-    dateAdded: "2025-04-19"
+    dateAdded: "2025-04-20"
   },
   {
-    id: "ibnkhaldun",
-    name: "Ibn Khaldun",
-    subtitle: "Father of Sociology",
-    era: "Islamic Golden Age",
-    years: "1332-1406",
-    region: "Middle East",
-    flag: "🕌",
-    image: "/Ibn Khaldun.png",
-    path: "/ibnkhaldun",
-    accentBg: "bg-stone-500/10",
-    accentBorder: "hover:border-stone-500/50",
-    accentShadow: "hover:shadow-[0_0_30px_rgba(120,113,108,0.15)]",
-    accentText: "group-hover:text-stone-400",
-    dateAdded: "2025-04-19"
+    id: "juliet",
+    name: "Juliet",
+    subtitle: "Daughter of Lord Capulet",
+    era: "Capulet Family",
+    years: "13-14 years",
+    region: "Capulet",
+    flag: "�",
+    image: "/Juliet.png",
+    path: "/juliet",
+    accentBg: "bg-emerald-500/10",
+    accentBorder: "hover:border-emerald-500/50",
+    accentShadow: "hover:shadow-[0_0_30px_rgba(16,185,129,0.15)]",
+    accentText: "group-hover:text-emerald-400",
+    dateAdded: "2025-04-20"
   },
   {
-    id: "princehenry",
-    name: "Prince Henry",
-    subtitle: "The Navigator",
-    era: "Age of Discovery",
-    years: "1394-1460",
-    region: "Europe",
-    flag: "🇵🇹",
-    image: "/Prince Henry.png",
-    path: "/princehenry",
-    accentBg: "bg-red-600/10",
-    accentBorder: "hover:border-red-600/50",
-    accentShadow: "hover:shadow-[0_0_30px_rgba(220,38,38,0.15)]",
-    accentText: "group-hover:text-red-500",
-    dateAdded: "2025-04-19"
+    id: "friar",
+    name: "Friar Laurence",
+    subtitle: "Franciscan Friar",
+    era: "Religious Advisor",
+    years: "Adult",
+    region: "Verona",
+    flag: "⛪",
+    image: "/Friar Laurence.png",
+    path: "/friarlaurence",
+    accentBg: "bg-teal-500/10",
+    accentBorder: "hover:border-teal-500/50",
+    accentShadow: "hover:shadow-[0_0_30px_rgba(45,212,191,0.15)]",
+    accentText: "group-hover:text-teal-400",
+    dateAdded: "2025-04-20"
   },
   {
-    id: "tamerlane",
-    name: "Tamerlane",
-    subtitle: "Timur the Lame",
-    era: "Timurid Empire",
-    years: "1336-1405",
-    region: "Central Asia",
-    flag: "🐎",
-    image: "/Tamerlane.png",
-    path: "/tamerlane",
-    accentBg: "bg-amber-700/10",
-    accentBorder: "hover:border-amber-700/50",
-    accentShadow: "hover:shadow-[0_0_30px_rgba(180,83,9,0.15)]",
-    accentText: "group-hover:text-amber-600",
-    dateAdded: "2025-04-19"
+    id: "mercutio",
+    name: "Mercutio",
+    subtitle: "Kinsman to the Prince",
+    era: "Neutral",
+    years: "Young Adult",
+    region: "Verona",
+    flag: "⚔️",
+    image: "/Mercutio.png",
+    path: "/mercutio",
+    accentBg: "bg-lime-500/10",
+    accentBorder: "hover:border-lime-500/50",
+    accentShadow: "hover:shadow-[0_0_30px_rgba(163,230,53,0.15)]",
+    accentText: "group-hover:text-lime-400",
+    dateAdded: "2025-04-20"
+  },
+  {
+    id: "tybalt",
+    name: "Tybalt",
+    subtitle: "Cousin to Juliet",
+    era: "Capulet Family",
+    years: "Young Adult",
+    region: "Capulet",
+    flag: "🔥",
+    image: "/Tybalt.png",
+    path: "/tybalt",
+    accentBg: "bg-red-500/10",
+    accentBorder: "hover:border-red-500/50",
+    accentShadow: "hover:shadow-[0_0_30px_rgba(239,68,68,0.15)]",
+    accentText: "group-hover:text-red-400",
+    dateAdded: "2025-04-20"
+  },
+  {
+    id: "benvolio",
+    name: "Benvolio",
+    subtitle: "Nephew to Lord Montague",
+    era: "Montague Family",
+    years: "Young Adult",
+    region: "Montague",
+    flag: "🛡️",
+    image: "/Benvolio.png",
+    path: "/benvolio",
+    accentBg: "bg-cyan-500/10",
+    accentBorder: "hover:border-cyan-500/50",
+    accentShadow: "hover:shadow-[0_0_30px_rgba(6,182,212,0.15)]",
+    accentText: "group-hover:text-cyan-400",
+    dateAdded: "2025-04-20"
+  },
+  {
+    id: "nurse",
+    name: "The Nurse",
+    subtitle: "Juliet's Attendant",
+    era: "Capulet Household",
+    years: "Adult",
+    region: "Capulet",
+    flag: "�",
+    image: "/TheNurse.png",
+    path: "/thenurse",
+    accentBg: "bg-green-600/10",
+    accentBorder: "hover:border-green-600/50",
+    accentShadow: "hover:shadow-[0_0_30px_rgba(22,163,74,0.15)]",
+    accentText: "group-hover:text-green-500",
+    dateAdded: "2025-04-20"
   }
 ];
 
@@ -423,15 +167,15 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-stone-950 text-stone-300 font-sans selection:bg-rose-500/30 selection:text-rose-200 relative overflow-hidden flex flex-col">
+    <div className="min-h-screen bg-stone-950 text-stone-300 font-sans selection:bg-green-500/30 selection:text-green-200 relative overflow-hidden flex flex-col">
       <div className="fixed inset-0 tech-grid pointer-events-none opacity-20 z-0"></div>
       <div className="fixed inset-0 scanlines pointer-events-none opacity-[0.03] z-50"></div>
 
       {/* HEADER */}
       <header className="fixed top-0 left-0 right-0 h-14 bg-stone-950/80 backdrop-blur-md border-b border-stone-800 z-40 flex items-center px-6 justify-between text-xs font-mono">
-        <Link to="/" className="flex items-center gap-3 text-stone-400 hover:text-rose-400 transition-colors">
-          <Terminal className="w-4 h-4 text-rose-500" />
-          <span>AP_WORLD_HIST_DB // v2.05</span>
+        <Link to="/" className="flex items-center gap-3 text-stone-400 hover:text-green-400 transition-colors">
+          <Terminal className="w-4 h-4 text-green-500" />
+          <span>ROMEO_JULIET_DB // v1.0</span>
         </Link>
         <div className="flex items-center gap-4 text-stone-500">
           SYSTEM_READY
@@ -445,9 +189,9 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center space-y-6 max-w-2xl mb-12 w-full"
         >
-          <div className="inline-flex items-center gap-2 bg-rose-500/10 border border-rose-500/30 text-rose-400 px-4 py-2 rounded-full text-xs font-mono uppercase tracking-widest shadow-[0_0_15px_rgba(225,29,72,0.2)]">
+          <div className="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/30 text-green-400 px-4 py-2 rounded-full text-xs font-mono uppercase tracking-widest shadow-[0_0_15px_rgba(34,197,94,0.2)]">
             <Database className="w-4 h-4" />
-            Central Archive
+            Verona Archive
           </div>
           <h1 className="font-sans text-4xl md:text-6xl font-extrabold tracking-tight text-white uppercase drop-shadow-[0_0_20px_rgba(255,255,255,0.1)]">
             Select Record
@@ -474,7 +218,7 @@ export default function Home() {
                 onClick={() => setFilter('All')}
                 className={`px-4 py-1.5 rounded text-sm font-mono transition-colors ${
                   filter === 'All' 
-                    ? 'bg-rose-500/20 text-rose-400 border border-rose-500/30' 
+                    ? 'bg-green-500/20 text-green-400 border border-green-500/30' 
                     : 'text-stone-400 hover:text-stone-200 hover:bg-white/5 border border-transparent'
                 }`}
               >
@@ -488,7 +232,7 @@ export default function Home() {
                     onClick={() => setFilter(r)}
                     className={`px-4 py-1.5 rounded text-sm font-mono transition-colors ${
                       filter === r 
-                        ? 'bg-rose-500/20 text-rose-400 border border-rose-500/30' 
+                        ? 'bg-green-500/20 text-green-400 border border-green-500/30' 
                         : 'text-stone-400 hover:text-stone-200 hover:bg-white/5 border border-transparent'
                     }`}
                   >

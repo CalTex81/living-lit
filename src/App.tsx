@@ -1,28 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import EmperorTaizu from './pages/profiles/EmperorTaizu';
-import ZhuXi from './pages/profiles/ZhuXi';
-import WuZetian from './pages/profiles/WuZetian';
-import Muhammad from './pages/profiles/Muhammad';
-import NasirAlDinAlTusi from './pages/profiles/NasirAlDinAlTusi';
-import AishahAlBauniyyah from './pages/profiles/AishahAlBauniyyah';
-import MamlukSultans from './pages/profiles/MamlukSultans';
-import SuryavarmanII from './pages/profiles/SuryavarmanII';
-import GenghisKhan from './pages/profiles/GenghisKhan';
-import MarcoPolo from './pages/profiles/MarcoPolo';
-import GeorgeWashington from './pages/profiles/GeorgeWashington';
-import MinamotoYoritomo from './pages/profiles/MinamotoYoritomo';
-import KublaiKhan from './pages/profiles/KublaiKhan';
-import IbnBattuta from './pages/profiles/IbnBattuta';
-import ZhengHe from './pages/profiles/ZhengHe';
-import MahatmaGandhi from './pages/profiles/MahatmaGandhi';
-import Urcachillay from './pages/profiles/Urcachillay';
-import AlRazi from './pages/profiles/AlRazi';
-import MansaMusa from './pages/profiles/MansaMusa';
-import SundiataKeita from './pages/profiles/SundiataKeita';
-import IbnKhaldun from './pages/profiles/IbnKhaldun';
-import PrinceHenry from './pages/profiles/PrinceHenry';
-import Tamerlane from './pages/profiles/Tamerlane';
+import Romeo from './pages/profiles/Romeo';
+import Juliet from './pages/profiles/Juliet';
+import FriarLaurence from './pages/profiles/FriarLaurence';
+import Mercutio from './pages/profiles/Mercutio';
+import Tybalt from './pages/profiles/Tybalt';
+import Benvolio from './pages/profiles/Benvolio';
+import TheNurse from './pages/profiles/TheNurse';
 import Landing from './pages/Landing';
 import Home from './pages/Home';
 
@@ -32,29 +16,13 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/archive" element={<Home />} />
-        <Route path="/taizu" element={<EmperorTaizu />} />
-        <Route path="/zhuxi" element={<ZhuXi />} />
-        <Route path="/wuzetian" element={<WuZetian />} />
-        <Route path="/muhammad" element={<Muhammad />} />
-        <Route path="/al-tusi" element={<NasirAlDinAlTusi />} />
-        <Route path="/bauniyyah" element={<AishahAlBauniyyah />} />
-        <Route path="/mamluks" element={<MamlukSultans />} />
-        <Route path="/suryavarman" element={<SuryavarmanII />} />
-        <Route path="/genghiskhan" element={<GenghisKhan />} />
-        <Route path="/marcopolo" element={<MarcoPolo />} />
-        <Route path="/washington" element={<GeorgeWashington />} />
-        <Route path="/yoritomo" element={<MinamotoYoritomo />} />
-        <Route path="/kublaikhan" element={<KublaiKhan />} />
-        <Route path="/ibnbattuta" element={<IbnBattuta />} />
-        <Route path="/zhenghe" element={<ZhengHe />} />
-        <Route path="/gandhi" element={<MahatmaGandhi />} />
-        <Route path="/urcachillay" element={<Urcachillay />} />
-        <Route path="/alrazi" element={<AlRazi />} />
-        <Route path="/mansamusa" element={<MansaMusa />} />
-        <Route path="/sundiata" element={<SundiataKeita />} />
-        <Route path="/ibnkhaldun" element={<IbnKhaldun />} />
-        <Route path="/princehenry" element={<PrinceHenry />} />
-        <Route path="/tamerlane" element={<Tamerlane />} />
+        <Route path="/romeo" element={<Romeo />} />
+        <Route path="/juliet" element={<Juliet />} />
+        <Route path="/friarlaurence" element={<FriarLaurence />} />
+        <Route path="/mercutio" element={<Mercutio />} />
+        <Route path="/tybalt" element={<Tybalt />} />
+        <Route path="/benvolio" element={<Benvolio />} />
+        <Route path="/thenurse" element={<TheNurse />} />
       </Routes>
     </BrowserRouter>
   );
