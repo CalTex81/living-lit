@@ -17,6 +17,7 @@ type Record = {
   accentBorder: string;
   accentShadow: string;
   accentText: string;
+  dateAdded: string;
 };
 
 const records: Record[] = [
@@ -33,7 +34,8 @@ const records: Record[] = [
     accentBg: "bg-rose-500/10",
     accentBorder: "hover:border-rose-500/50",
     accentShadow: "hover:shadow-[0_0_30px_rgba(225,29,72,0.15)]",
-    accentText: "group-hover:text-rose-400"
+    accentText: "group-hover:text-rose-400",
+    dateAdded: "2025-04-19"
   },
   {
     id: "zhuxi",
@@ -48,7 +50,8 @@ const records: Record[] = [
     accentBg: "bg-emerald-500/10",
     accentBorder: "hover:border-emerald-500/50",
     accentShadow: "hover:shadow-[0_0_30px_rgba(16,185,129,0.15)]",
-    accentText: "group-hover:text-emerald-400"
+    accentText: "group-hover:text-emerald-400",
+    dateAdded: "2025-04-19"
   },
   {
     id: "wuzetian",
@@ -63,7 +66,8 @@ const records: Record[] = [
     accentBg: "bg-amber-500/10",
     accentBorder: "hover:border-amber-500/50",
     accentShadow: "hover:shadow-[0_0_30px_rgba(251,191,36,0.15)]",
-    accentText: "group-hover:text-amber-400"
+    accentText: "group-hover:text-amber-400",
+    dateAdded: "2025-04-19"
   },
   {
     id: "suryavarman",
@@ -78,7 +82,8 @@ const records: Record[] = [
     accentBg: "bg-lime-500/10",
     accentBorder: "hover:border-lime-500/50",
     accentShadow: "hover:shadow-[0_0_30px_rgba(163,230,53,0.15)]",
-    accentText: "group-hover:text-lime-400"
+    accentText: "group-hover:text-lime-400",
+    dateAdded: "2025-04-19"
   },
   {
     id: "muhammad",
@@ -93,7 +98,8 @@ const records: Record[] = [
     accentBg: "bg-sky-500/10",
     accentBorder: "hover:border-sky-500/50",
     accentShadow: "hover:shadow-[0_0_30px_rgba(56,189,248,0.15)]",
-    accentText: "group-hover:text-sky-400"
+    accentText: "group-hover:text-sky-400",
+    dateAdded: "2025-04-19"
   },
   {
     id: "al-tusi",
@@ -108,7 +114,8 @@ const records: Record[] = [
     accentBg: "bg-violet-500/10",
     accentBorder: "hover:border-violet-500/50",
     accentShadow: "hover:shadow-[0_0_30px_rgba(167,139,250,0.15)]",
-    accentText: "group-hover:text-violet-400"
+    accentText: "group-hover:text-violet-400",
+    dateAdded: "2025-04-19"
   },
   {
     id: "bauniyyah",
@@ -123,7 +130,8 @@ const records: Record[] = [
     accentBg: "bg-teal-500/10",
     accentBorder: "hover:border-teal-500/50",
     accentShadow: "hover:shadow-[0_0_30px_rgba(45,212,191,0.15)]",
-    accentText: "group-hover:text-teal-400"
+    accentText: "group-hover:text-teal-400",
+    dateAdded: "2025-04-19"
   },
   {
     id: "mamluks",
@@ -138,7 +146,8 @@ const records: Record[] = [
     accentBg: "bg-orange-500/10",
     accentBorder: "hover:border-orange-500/50",
     accentShadow: "hover:shadow-[0_0_30px_rgba(251,146,60,0.15)]",
-    accentText: "group-hover:text-orange-400"
+    accentText: "group-hover:text-orange-400",
+    dateAdded: "2025-04-19"
   },
   {
     id: "yoritomo",
@@ -153,7 +162,8 @@ const records: Record[] = [
     accentBg: "bg-indigo-500/10",
     accentBorder: "hover:border-indigo-500/50",
     accentShadow: "hover:shadow-[0_0_30px_rgba(129,140,248,0.15)]",
-    accentText: "group-hover:text-indigo-400"
+    accentText: "group-hover:text-indigo-400",
+    dateAdded: "2025-04-19"
   },
   {
     id: "genghis",
@@ -168,7 +178,8 @@ const records: Record[] = [
     accentBg: "bg-rose-600/10",
     accentBorder: "hover:border-rose-600/50",
     accentShadow: "hover:shadow-[0_0_30px_rgba(225,29,72,0.15)]",
-    accentText: "group-hover:text-rose-400"
+    accentText: "group-hover:text-rose-400",
+    dateAdded: "2025-04-19"
   },
   {
     id: "kublaikhan",
@@ -183,7 +194,8 @@ const records: Record[] = [
     accentBg: "bg-amber-600/10",
     accentBorder: "hover:border-amber-600/50",
     accentShadow: "hover:shadow-[0_0_30px_rgba(217,119,6,0.15)]",
-    accentText: "group-hover:text-amber-500"
+    accentText: "group-hover:text-amber-500",
+    dateAdded: "2025-04-19"
   },
   {
     id: "polo",
@@ -198,7 +210,8 @@ const records: Record[] = [
     accentBg: "bg-amber-500/10",
     accentBorder: "hover:border-amber-500/50",
     accentShadow: "hover:shadow-[0_0_30px_rgba(251,191,36,0.15)]",
-    accentText: "group-hover:text-amber-400"
+    accentText: "group-hover:text-amber-400",
+    dateAdded: "2025-04-19"
   },
   {
     id: "washington",
@@ -213,7 +226,8 @@ const records: Record[] = [
     accentBg: "bg-blue-600/10",
     accentBorder: "hover:border-blue-600/50",
     accentShadow: "hover:shadow-[0_0_30px_rgba(37,99,235,0.15)]",
-    accentText: "group-hover:text-blue-400"
+    accentText: "group-hover:text-blue-400",
+    dateAdded: "2025-04-19"
   },
   {
     id: "ibnbattuta",
@@ -228,7 +242,8 @@ const records: Record[] = [
     accentBg: "bg-cyan-500/10",
     accentBorder: "hover:border-cyan-500/50",
     accentShadow: "hover:shadow-[0_0_30px_rgba(6,182,212,0.15)]",
-    accentText: "group-hover:text-cyan-400"
+    accentText: "group-hover:text-cyan-400",
+    dateAdded: "2025-04-19"
   },
   {
     id: "zhenghe",
@@ -243,7 +258,8 @@ const records: Record[] = [
     accentBg: "bg-sky-500/10",
     accentBorder: "hover:border-sky-500/50",
     accentShadow: "hover:shadow-[0_0_30px_rgba(56,189,248,0.15)]",
-    accentText: "group-hover:text-sky-400"
+    accentText: "group-hover:text-sky-400",
+    dateAdded: "2025-04-19"
   },
   {
     id: "gandhi",
@@ -258,7 +274,120 @@ const records: Record[] = [
     accentBg: "bg-orange-500/10",
     accentBorder: "hover:border-orange-500/50",
     accentShadow: "hover:shadow-[0_0_30px_rgba(251,146,60,0.15)]",
-    accentText: "group-hover:text-orange-400"
+    accentText: "group-hover:text-orange-400",
+    dateAdded: "2025-04-19"
+  },
+  {
+    id: "urcachillay",
+    name: "Urcachillay",
+    subtitle: "Inca Deity of Herds",
+    era: "Inca Empire",
+    years: "Pre-Columbian",
+    region: "South America",
+    flag: "🇵🇪",
+    image: "/Urcachillay.png",
+    path: "/urcachillay",
+    accentBg: "bg-fuchsia-500/10",
+    accentBorder: "hover:border-fuchsia-500/50",
+    accentShadow: "hover:shadow-[0_0_30px_rgba(217,70,239,0.15)]",
+    accentText: "group-hover:text-fuchsia-400",
+    dateAdded: "2025-04-19"
+  },
+  {
+    id: "alrazi",
+    name: "Al-Razi",
+    subtitle: "The Great Physician",
+    era: "Islamic Golden Age",
+    years: "854-925",
+    region: "Middle East",
+    flag: "🕌",
+    image: "/Al Razi.png",
+    path: "/alrazi",
+    accentBg: "bg-purple-500/10",
+    accentBorder: "hover:border-purple-500/50",
+    accentShadow: "hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]",
+    accentText: "group-hover:text-purple-400",
+    dateAdded: "2025-04-19"
+  },
+  {
+    id: "mansamusa",
+    name: "Mansa Musa",
+    subtitle: "The Wealthiest Man in History",
+    era: "Mali Empire",
+    years: "1280-1337",
+    region: "Africa",
+    flag: "🌍",
+    image: "/Mansa Musa.png",
+    path: "/mansamusa",
+    accentBg: "bg-yellow-500/10",
+    accentBorder: "hover:border-yellow-500/50",
+    accentShadow: "hover:shadow-[0_0_30px_rgba(234,179,8,0.15)]",
+    accentText: "group-hover:text-yellow-400",
+    dateAdded: "2025-04-19"
+  },
+  {
+    id: "sundiata",
+    name: "Sundiata Keita",
+    subtitle: "The Lion King",
+    era: "Mali Empire",
+    years: "1217-1255",
+    region: "Africa",
+    flag: "🌍",
+    image: "/Sundiata Keita.png",
+    path: "/sundiata",
+    accentBg: "bg-green-500/10",
+    accentBorder: "hover:border-green-500/50",
+    accentShadow: "hover:shadow-[0_0_30px_rgba(34,197,94,0.15)]",
+    accentText: "group-hover:text-green-400",
+    dateAdded: "2025-04-19"
+  },
+  {
+    id: "ibnkhaldun",
+    name: "Ibn Khaldun",
+    subtitle: "Father of Sociology",
+    era: "Islamic Golden Age",
+    years: "1332-1406",
+    region: "Middle East",
+    flag: "🕌",
+    image: "/Ibn Khaldun.png",
+    path: "/ibnkhaldun",
+    accentBg: "bg-stone-500/10",
+    accentBorder: "hover:border-stone-500/50",
+    accentShadow: "hover:shadow-[0_0_30px_rgba(120,113,108,0.15)]",
+    accentText: "group-hover:text-stone-400",
+    dateAdded: "2025-04-19"
+  },
+  {
+    id: "princehenry",
+    name: "Prince Henry",
+    subtitle: "The Navigator",
+    era: "Age of Discovery",
+    years: "1394-1460",
+    region: "Europe",
+    flag: "🇵🇹",
+    image: "/Prince Henry.png",
+    path: "/princehenry",
+    accentBg: "bg-red-600/10",
+    accentBorder: "hover:border-red-600/50",
+    accentShadow: "hover:shadow-[0_0_30px_rgba(220,38,38,0.15)]",
+    accentText: "group-hover:text-red-500",
+    dateAdded: "2025-04-19"
+  },
+  {
+    id: "tamerlane",
+    name: "Tamerlane",
+    subtitle: "Timur the Lame",
+    era: "Timurid Empire",
+    years: "1336-1405",
+    region: "Central Asia",
+    flag: "🐎",
+    image: "/Tamerlane.png",
+    path: "/tamerlane",
+    accentBg: "bg-amber-700/10",
+    accentBorder: "hover:border-amber-700/50",
+    accentShadow: "hover:shadow-[0_0_30px_rgba(180,83,9,0.15)]",
+    accentText: "group-hover:text-amber-600",
+    dateAdded: "2025-04-19"
   }
 ];
 
@@ -267,8 +396,17 @@ const regions = Array.from(new Set(records.map(r => r.region)));
 
 export default function Home() {
   const [filter, setFilter] = useState('All');
+  const [searchQuery, setSearchQuery] = useState('');
 
-  const filteredRecords = records.filter(r => filter === 'All' || r.region === filter);
+  const filteredRecords = records.filter(r => {
+    const matchesFilter = filter === 'All' || r.region === filter;
+    const matchesSearch = searchQuery === '' || 
+      r.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      r.era.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      r.subtitle.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      r.years.toLowerCase().includes(searchQuery.toLowerCase());
+    return matchesFilter && matchesSearch;
+  });
 
   // Group filtered records by region
   const groupedByRegion: { region: string; flag: string; items: Record[] }[] = [];
@@ -319,14 +457,15 @@ export default function Home() {
           </p>
           
           {/* SEARCH & FILTERS */}
-          <div className="flex flex-col md:flex-row items-center gap-4 mx-auto w-full max-w-2xl mt-8">
-            <div className="glass-panel flex-1 flex items-center gap-3 px-4 py-3 rounded-lg border-stone-700/50 w-full">
+          <div className="flex flex-col items-center gap-4 mx-auto w-full max-w-2xl mt-8">
+            <div className="glass-panel flex items-center gap-3 px-4 py-3 rounded-lg border-stone-700/50 w-full">
               <Search className="w-5 h-5 text-stone-500" />
               <input 
                 type="text" 
                 placeholder="Search by name, era, or civilization..." 
                 className="bg-transparent border-none outline-none text-stone-300 w-full font-mono text-sm placeholder:text-stone-600"
-                disabled
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
               />
             </div>
             <div className="flex items-center gap-2 bg-stone-900/50 p-1.5 rounded-lg border border-stone-800">

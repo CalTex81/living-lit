@@ -150,7 +150,7 @@ export default function SuryavarmanII() {
               <StatCard label="Era" value="1113 – 1150 CE" />
               <StatCard label="Empire" value="Khmer Empire" />
               <StatCard label="Role" value="King / Patron" />
-              <StatCard label="Legacy" value="Angkor Wat" />
+              <StatCard label="Date Added" value="2025-04-19" />
             </div>
           </motion.div>
         </div>

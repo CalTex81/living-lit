@@ -151,7 +151,7 @@ export default function WuZetian() {
               <StatCard label="Lifespan" value="624 – 705 CE" />
               <StatCard label="Dynasty" value="Tang → Zhou" />
               <StatCard label="Reign" value="690 – 705 CE" />
-              <StatCard label="Title" value="Emperor (皇帝)" />
+              <StatCard label="Date Added" value="2025-04-19" />
             </div>
           </motion.div>
         </div>

@@ -149,7 +149,7 @@ export default function MinamotoYoritomo() {
               <StatCard label="Lifespan" value="1147 – 1199 CE" />
               <StatCard label="Civilization" value="Kamakura Japan" />
               <StatCard label="Era" value="Feudal Period" />
-              <StatCard label="Legacy" value="Shogunate System" />
+              <StatCard label="Date Added" value="2025-04-19" />
             </div>
           </motion.div>
         </div>

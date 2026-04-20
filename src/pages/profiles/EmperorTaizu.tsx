@@ -148,7 +148,7 @@ export default function EmperorTaizu() {
               <StatCard label="Lifespan" value="927 – 976 CE" />
               <StatCard label="Dynasty" value="Song Dynasty" />
               <StatCard label="Predecessor Era" value="Five Dynasties" />
-              <StatCard label="Successor" value="Emp. Taizong" />
+              <StatCard label="Date Added" value="2025-04-19" />
             </div>
           </motion.div>
         </div>

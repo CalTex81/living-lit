@@ -150,7 +150,7 @@ export default function GeorgeWashington() {
               <StatCard label="Lifespan" value="1732 – 1799 CE" />
               <StatCard label="Civilization" value="United States" />
               <StatCard label="Role" value="President & General" />
-              <StatCard label="Legacy" value="Democracy" />
+              <StatCard label="Date Added" value="2025-04-19" />
             </div>
           </motion.div>
         </div>

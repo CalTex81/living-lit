@@ -150,7 +150,7 @@ export default function ZhuXi() {
               <StatCard label="Lifespan" value="1130 – 1200 CE" />
               <StatCard label="Dynasty" value="Southern Song" />
               <StatCard label="School" value="Lixue (理学)" />
-              <StatCard label="Magnum Opus" value="The Four Books" />
+              <StatCard label="Date Added" value="2025-04-19" />
             </div>
           </motion.div>
         </div>

@@ -150,7 +150,7 @@ export default function ZhengHe() {
               <StatCard label="Lifespan" value="1371 – 1433 CE" />
               <StatCard label="Dynasty" value="Ming Dynasty" />
               <StatCard label="Fleet Size" value="300+ Ships" />
-              <StatCard label="Region" value="Indian Ocean" />
+              <StatCard label="Date Added" value="2025-04-19" />
             </div>
           </motion.div>
         </div>

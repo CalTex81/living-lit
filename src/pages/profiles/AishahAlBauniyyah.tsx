@@ -150,7 +150,7 @@ export default function AishahAlBauniyyah() {
               <StatCard label="Lifespan" value="1460 – 1517 CE" />
               <StatCard label="Empire" value="Mamluk Sultanate" />
               <StatCard label="Discipline" value="Sufism / Poetry" />
-              <StatCard label="Magnum Opus" value="Principles of Sufism" />
+              <StatCard label="Date Added" value="2025-04-19" />
             </div>
           </motion.div>
         </div>

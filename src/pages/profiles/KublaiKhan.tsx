@@ -149,7 +149,7 @@ export default function KublaiKhan() {
               <StatCard label="Lifespan" value="1215 – 1294 CE" />
               <StatCard label="Dynasty" value="Yuan Dynasty" />
               <StatCard label="Capital" value="Dadu (Beijing)" />
-              <StatCard label="Key Legacy" value="Pax Mongolica" />
+              <StatCard label="Date Added" value="2025-04-19" />
             </div>
           </motion.div>
         </div>

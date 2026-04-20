@@ -150,7 +150,7 @@ export default function MahatmaGandhi() {
               <StatCard label="Lifespan" value="1869 – 1948 CE" />
               <StatCard label="Ideology" value="Satyagraha" />
               <StatCard label="Movement" value="Independence" />
-              <StatCard label="Legacy" value="Father of Nation" />
+              <StatCard label="Date Added" value="2025-04-19" />
             </div>
           </motion.div>
         </div>

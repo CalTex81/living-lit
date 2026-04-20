@@ -152,7 +152,7 @@ export default function Muhammad() {
               <StatCard label="Lifespan" value="570 – 632 CE" />
               <StatCard label="Region" value="Arabian Peninsula" />
               <StatCard label="Role" value="Prophet & Statesman" />
-              <StatCard label="Legacy" value="Islam / Ummah" />
+              <StatCard label="Date Added" value="2025-04-19" />
             </div>
           </motion.div>
         </div>

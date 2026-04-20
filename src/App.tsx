@@ -16,6 +16,13 @@ import KublaiKhan from './pages/profiles/KublaiKhan';
 import IbnBattuta from './pages/profiles/IbnBattuta';
 import ZhengHe from './pages/profiles/ZhengHe';
 import MahatmaGandhi from './pages/profiles/MahatmaGandhi';
+import Urcachillay from './pages/profiles/Urcachillay';
+import AlRazi from './pages/profiles/AlRazi';
+import MansaMusa from './pages/profiles/MansaMusa';
+import SundiataKeita from './pages/profiles/SundiataKeita';
+import IbnKhaldun from './pages/profiles/IbnKhaldun';
+import PrinceHenry from './pages/profiles/PrinceHenry';
+import Tamerlane from './pages/profiles/Tamerlane';
 import Landing from './pages/Landing';
 import Home from './pages/Home';
 
@@ -41,6 +48,13 @@ export default function App() {
         <Route path="/ibnbattuta" element={<IbnBattuta />} />
         <Route path="/zhenghe" element={<ZhengHe />} />
         <Route path="/gandhi" element={<MahatmaGandhi />} />
+        <Route path="/urcachillay" element={<Urcachillay />} />
+        <Route path="/alrazi" element={<AlRazi />} />
+        <Route path="/mansamusa" element={<MansaMusa />} />
+        <Route path="/sundiata" element={<SundiataKeita />} />
+        <Route path="/ibnkhaldun" element={<IbnKhaldun />} />
+        <Route path="/princehenry" element={<PrinceHenry />} />
+        <Route path="/tamerlane" element={<Tamerlane />} />
       </Routes>
     </BrowserRouter>
   );

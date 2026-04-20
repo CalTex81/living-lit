@@ -150,7 +150,7 @@ export default function MarcoPolo() {
               <StatCard label="Lifespan" value="1254 – 1324 CE" />
               <StatCard label="Origin" value="Venice, Italy" />
               <StatCard label="Role" value="Merchant & Envoy" />
-              <StatCard label="Legacy" value="Global Exchange" />
+              <StatCard label="Date Added" value="2025-04-19" />
             </div>
           </motion.div>
         </div>

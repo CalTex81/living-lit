@@ -150,7 +150,7 @@ export default function GenghisKhan() {
               <StatCard label="Lifespan" value="1162 – 1227 CE" />
               <StatCard label="Empire" value="Mongol Empire" />
               <StatCard label="Strategy" value="Meritocracy" />
-              <StatCard label="Legacy" value="Silk Road Pax" />
+              <StatCard label="Date Added" value="2025-04-19" />
             </div>
           </motion.div>
         </div>

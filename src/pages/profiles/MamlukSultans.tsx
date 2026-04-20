@@ -106,7 +106,7 @@ export default function MamlukSultans() {
               <img
                 src="/Mamluk Sultans.png"
                 alt="Mamluk Sultans"
-                className="w-[110%] sm:w-[125%] md:w-[135%] lg:w-[145%] xl:w-[160%] 2xl:w-[180%] max-w-none h-auto max-h-[95vh] object-contain drop-shadow-[0_0_45px_rgba(251,146,60,0.5)] relative z-20"
+                className="w-[70%] sm:w-[75%] md:w-[80%] lg:w-[85%] xl:w-[90%] 2xl:w-[95%] max-w-2xl h-auto max-h-[70vh] object-contain drop-shadow-[0_0_45px_rgba(251,146,60,0.5)] relative z-20 mx-auto"
               />
             </motion.div>
 
@@ -150,7 +150,7 @@ export default function MamlukSultans() {
               <StatCard label="Era" value="1250 – 1517 CE" />
               <StatCard label="Capital" value="Cairo" />
               <StatCard label="Government" value="Military Oligarchy" />
-              <StatCard label="Key Tactic" value="Cavalry Warfare" />
+              <StatCard label="Date Added" value="2025-04-19" />
             </div>
           </motion.div>
         </div>

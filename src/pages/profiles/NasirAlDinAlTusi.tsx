@@ -151,7 +151,7 @@ export default function NasirAlDinAlTusi() {
               <StatCard label="Lifespan" value="1201 – 1274 CE" />
               <StatCard label="Region" value="Ilkhanate (Persia)" />
               <StatCard label="Discipline" value="Astronomy / Math" />
-              <StatCard label="Magnum Opus" value="Zij-i Ilkhani" />
+              <StatCard label="Date Added" value="2025-04-19" />
             </div>
           </motion.div>
         </div>
