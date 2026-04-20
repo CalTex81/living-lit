@@ -168,12 +168,6 @@ export default function Landing() {
               transition={{ duration: 1.5, delay: 0.8 }}
               className="relative w-96 h-96"
             >
-              {/* Placeholder for character images - will be added later */}
-              <div className="absolute inset-0 bg-green-500/5 rounded-full border-2 border-green-500/20 backdrop-blur-sm flex items-center justify-center">
-                <p className="font-mono text-xs text-green-500/50 uppercase tracking-widest text-center">
-                  Character<br/>Images<br/>Coming Soon
-                </p>
-              </div>
             </motion.div>
           </div>
         </motion.div>
