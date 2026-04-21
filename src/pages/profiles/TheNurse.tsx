@@ -8,13 +8,13 @@ const FloatingParticles = () => {
   
   useEffect(() => {
     setParticles(
-      Array.from({ length: 50 }).map((_, i) => ({
+      Array.from({ length: 200 }).map((_, i) => ({
         id: i,
-        x: Math.random() * 100,
-        y: Math.random() * 100,
-        size: Math.random() * 3 + 1,
-        speed: Math.random() * 20 + 10,
-        opacity: Math.random() * 0.5 + 0.1
+        x: Math.random() * 60 + 20, // Concentrated in center-left area
+        y: Math.random() * 60 + 20,
+        size: Math.random() * 8 + 4,
+        speed: Math.random() * 10 + 5,
+        opacity: Math.random() * 0.3 + 0.7
       }))
     );
   }, []);
@@ -67,8 +67,12 @@ export default function TheNurse() {
       <main className="relative z-10 pt-24 px-6 pb-20 max-w-7xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="space-y-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <div className="aspect-square flex items-center justify-center overflow-hidden">
+            <motion.div 
+              className="relative"
+              animate={{ y: [0, -15, 0] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <div className="aspect-square flex items-center justify-center overflow-hidden rounded-2xl -mt-20">
                 <div className="text-center">
                   <p className="font-mono text-xs text-green-500/50 uppercase tracking-widest">
                     Character Portrait
@@ -85,16 +89,16 @@ export default function TheNurse() {
                 </h3>
                 <div className="grid grid-cols-2 gap-2 text-xs">
                   <div>
-                    <span className="text-stone-500">Relation</span>
-                    <span className="text-stone-300 ml-2">Juliet's Nurse</span>
+                    <span className="text-stone-500">Role</span>
+                    <span className="text-stone-300 ml-2">Attendant</span>
                   </div>
                   <div>
-                    <span className="text-stone-500">Status</span>
-                    <span className="text-green-400 ml-2">Alive</span>
+                    <span className="text-stone-500">Employer</span>
+                    <span className="text-stone-300 ml-2">Capulet Family</span>
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/30 text-green-400 px-4 py-2 rounded-full text-xs font-mono uppercase tracking-widest">
                 <Heart className="w-4 h-4" />

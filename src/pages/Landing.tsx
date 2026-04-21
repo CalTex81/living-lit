@@ -101,68 +101,19 @@ export default function Landing() {
             y: mousePos.y
           }}
         >
-          {/* LEFT SIDE - Text Content */}
-          <div className="flex flex-col items-start text-left space-y-8 max-w-lg">
-            {/* LOGO AREA */}
-            <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 1.2, ease: "easeOut" }}
-              className="flex flex-col items-start gap-4"
-            >
-              <div className="relative">
-                <div className="absolute -inset-4 bg-green-500/20 blur-xl rounded-full animate-pulse"></div>
-                <Database className="w-16 h-16 text-green-500 relative z-10 drop-shadow-[0_0_15px_rgba(34,197,94,0.8)]" />
-              </div>
-              <div className="flex items-center gap-3 px-3 py-1 bg-stone-900/50 border border-stone-800 rounded text-[10px] font-mono tracking-widest text-stone-500">
-                 <Activity className="w-3 h-3 text-green-500 animate-pulse" />
-                 NEURAL_LINK_ESTABLISHED
-              </div>
-            </motion.div>
-
+          {/* LEFT SIDE - Content */}
+          <div className="flex-1 flex flex-col justify-center">
             {/* TITLE SEQUENCE */}
-            <div className="space-y-2">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              className="space-y-2"
+            >
               <h1 className="font-sans text-6xl md:text-8xl font-black text-white uppercase tracking-tight leading-[0.9]">
                 Living<br/>
                 <span className="text-green-500">Literature</span>
               </h1>
-              <motion.p 
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 1, delay: 1.2 }}
-                className="font-mono text-xs md:text-sm text-stone-400 uppercase tracking-[0.4em]"
-              >
-                Verona Character Archive // v1.0
-              </motion.p>
-            </div>
-
-            {/* ACTION BUTTON */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.8, duration: 0.8 }}
-            >
-              <Link to="/archive" className="group relative px-10 py-4 block">
-                <div className="absolute inset-0 bg-green-500/50 blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="relative px-8 py-3 bg-stone-950 border border-green-500/50 flex items-center gap-4 text-green-400 font-mono tracking-widest text-sm uppercase group-hover:bg-green-600 transition-all group-hover:text-white group-hover:border-green-300 overflow-hidden">
-                  <span className="relative z-10">Explore Database</span>
-                  <ChevronRight className="w-4 h-4 translate-x-0 group-hover:translate-x-1 transition-transform relative z-10" />
-                  
-                  {/* Button sliding effect */}
-                  <div className="absolute top-0 -left-full w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent group-hover:left-full transition-all duration-1000"></div>
-                </div>
-              </Link>
-            </motion.div>
-          </div>
-
-          {/* RIGHT SIDE - Space for character images/backgrounds */}
-          <div className="flex-1 flex items-center justify-center">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1.5, delay: 0.8 }}
-              className="relative w-96 h-96"
-            >
             </motion.div>
           </div>
         </motion.div>
