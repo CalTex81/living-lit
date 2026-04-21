@@ -1,11 +1,58 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Heart, Scroll, Clock, MapPin, Crown } from 'lucide-react';
 
+const FloatingParticles = () => {
+  const [particles, setParticles] = useState<{ id: number; x: number; y: number; size: number; speed: number; opacity: number }[]>([]);
+  
+  useEffect(() => {
+    setParticles(
+      Array.from({ length: 50 }).map((_, i) => ({
+        id: i,
+        x: Math.random() * 100,
+        y: Math.random() * 100,
+        size: Math.random() * 3 + 1,
+        speed: Math.random() * 20 + 10,
+        opacity: Math.random() * 0.5 + 0.1
+      }))
+    );
+  }, []);
+
+  return (
+    <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+      {particles.map((p) => (
+        <motion.div
+          key={p.id}
+          className="absolute bg-green-500 rounded-full blur-[1px]"
+          style={{
+            width: p.size,
+            height: p.size,
+            left: `${p.x}%`,
+            top: `${p.y}%`,
+          }}
+          animate={{
+            y: [0, -100, 0],
+            opacity: [p.opacity, p.opacity * 0.3, p.opacity],
+          }}
+          transition={{
+            duration: p.speed,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        />
+      ))}
+    </div>
+  );
+};
+
 export default function Juliet() {
   return (
     <div className="min-h-screen bg-stone-950 text-stone-300 font-sans selection:bg-green-500/30 selection:text-green-200 relative overflow-hidden">
+      <div className="fixed inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/Background_Romeo&Juliet.png")' }}>
+        <div className="absolute inset-0 bg-stone-950/80"></div>
+      </div>
+      <FloatingParticles />
       <div className="fixed inset-0 tech-grid pointer-events-none opacity-20 z-0"></div>
       <div className="fixed inset-0 scanlines pointer-events-none opacity-[0.03] z-50"></div>
 
@@ -30,15 +77,12 @@ export default function Juliet() {
           {/* HERO SECTION */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <div className="aspect-square flex items-center justify-center overflow-hidden">
-                <div className="text-center">
-                  <p className="font-mono text-xs text-green-500/50 uppercase tracking-widest">
-                    Character Portrait
-                  </p>
-                  <p className="font-mono text-[10px] text-green-500/30 mt-2">
-                    Coming Soon
-                  </p>
-                </div>
+              <div className="aspect-square flex items-center justify-center overflow-hidden rounded-2xl">
+                <img 
+                  src="/Juliet (R&J).png" 
+                  alt="Juliet Capulet"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="absolute bottom-4 left-4 right-4 glass-panel rounded-xl p-4 border border-green-500/30 shadow-[0_0_30px_rgba(34,197,94,0.1)]">
                 <h3 className="font-mono text-xs text-green-400 uppercase tracking-widest mb-3 flex items-center gap-2">

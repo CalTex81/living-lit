@@ -1,11 +1,58 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Scroll, Clock, MapPin, Heart } from 'lucide-react';
 
+const FloatingParticles = () => {
+  const [particles, setParticles] = useState<{ id: number; x: number; y: number; size: number; speed: number; opacity: number }[]>([]);
+  
+  useEffect(() => {
+    setParticles(
+      Array.from({ length: 50 }).map((_, i) => ({
+        id: i,
+        x: Math.random() * 100,
+        y: Math.random() * 100,
+        size: Math.random() * 3 + 1,
+        speed: Math.random() * 20 + 10,
+        opacity: Math.random() * 0.5 + 0.1
+      }))
+    );
+  }, []);
+
+  return (
+    <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+      {particles.map((p) => (
+        <motion.div
+          key={p.id}
+          className="absolute bg-green-500 rounded-full blur-[1px]"
+          style={{
+            width: p.size,
+            height: p.size,
+            left: `${p.x}%`,
+            top: `${p.y}%`,
+          }}
+          animate={{
+            y: [0, -100, 0],
+            opacity: [p.opacity, p.opacity * 0.3, p.opacity],
+          }}
+          transition={{
+            duration: p.speed,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        />
+      ))}
+    </div>
+  );
+};
+
 export default function TheNurse() {
   return (
     <div className="min-h-screen bg-stone-950 text-stone-300 font-sans selection:bg-green-500/30 selection:text-green-200 relative overflow-hidden">
+      <div className="fixed inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/Background_Romeo&Juliet.png")' }}>
+        <div className="absolute inset-0 bg-stone-950/80"></div>
+      </div>
+      <FloatingParticles />
       <div className="fixed inset-0 tech-grid pointer-events-none opacity-20 z-0"></div>
       <div className="fixed inset-0 scanlines pointer-events-none opacity-[0.03] z-50"></div>
 

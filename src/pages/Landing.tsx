@@ -122,15 +122,10 @@ export default function Landing() {
 
             {/* TITLE SEQUENCE */}
             <div className="space-y-2">
-              <motion.h1 
-                initial={{ letterSpacing: "0.5em", opacity: 0 }}
-                animate={{ letterSpacing: "0.2em", opacity: 1 }}
-                transition={{ duration: 1.5, delay: 0.5 }}
-                className="text-6xl md:text-7xl font-black text-white uppercase tracking-[0.2em] relative"
-              >
-                Romeo<br/>& Juliet
-                <span className="absolute -inset-1 bg-green-500/10 blur-2xl -z-10"></span>
-              </motion.h1>
+              <h1 className="font-sans text-6xl md:text-8xl font-black text-white uppercase tracking-tight leading-[0.9]">
+                Living<br/>
+                <span className="text-green-500">Literature</span>
+              </h1>
               <motion.p 
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
