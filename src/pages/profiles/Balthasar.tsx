@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Scroll, Clock, MapPin, Shield, Rose, Heart, Zap } from 'lucide-react';
+import { ArrowLeft, Shield, Heart, Swords, Scroll, Clock, MapPin, Rose, Zap } from 'lucide-react';
 
 const FloatingParticles = () => {
   const [particles, setParticles] = useState<{ id: number, size: number, left: number, top: number, duration: number, delay: number }[]>([]);
@@ -20,7 +20,7 @@ const FloatingParticles = () => {
   }, []);
 
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+    <div className="absolute inset-0 overflow-hidden pointer-events-none z-0 mix-blend-screen opacity-70">
       {particles.map((p) => (
         <motion.div
           key={p.id}
@@ -38,7 +38,7 @@ const FloatingParticles = () => {
   );
 };
 
-export default function Benvolio() {
+export default function Balthasar() {
   return (
     <div className="min-h-screen bg-stone-950 text-stone-300 font-sans selection:bg-blue-500/30 selection:text-blue-200 relative overflow-hidden">
       <div className="fixed inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/Background_Romeo&Juliet.png")' }}>
@@ -48,19 +48,27 @@ export default function Benvolio() {
       <div className="fixed inset-0 tech-grid pointer-events-none opacity-20 z-0"></div>
       <div className="fixed inset-0 scanlines pointer-events-none opacity-[0.03] z-50"></div>
 
+      {/* HEADER */}
       <header className="fixed top-0 left-0 right-0 h-14 bg-stone-950/80 backdrop-blur-md border-b border-stone-800 z-40 flex items-center px-6 justify-between text-xs font-mono">
         <Link to="/archive" className="flex items-center gap-3 text-stone-400 hover:text-blue-400 transition-colors">
           <ArrowLeft className="w-4 h-4" />
           <span>RETURN_TO_ARCHIVE</span>
         </Link>
         <div className="flex items-center gap-4 text-stone-500">
-          ID: BENVOLIO_MONTAGUE_001
+          ID: BALTHASAR_001
         </div>
       </header>
 
+      {/* MAIN CONTENT */}
       <main className="relative z-10 pt-24 px-6 pb-20 max-w-7xl mx-auto">
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="space-y-12">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="space-y-12"
+        >
+          {/* HERO SECTION */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Character Image - Left side */}
             <div className="relative">
             <motion.div 
                 className="aspect-square flex items-center justify-center overflow-hidden rounded-2xl -mt-10"
@@ -68,8 +76,8 @@ export default function Benvolio() {
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             >
                 <img 
-                  src="/Benvolio (R&J).png" 
-                  alt="Benvolio"
+                  src="/Balthasar (R&J).png" 
+                  alt="Balthasar"
                   className="w-[110%] sm:w-[125%] md:w-[135%] lg:w-[145%] xl:w-[160%] 2xl:w-[180%] max-w-none h-auto max-h-[95vh] object-contain drop-shadow-[0_0_45px_rgba(96,165,250,0.5)] relative z-20"
                 />
               </motion.div>
@@ -78,26 +86,27 @@ export default function Benvolio() {
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/30 text-blue-400 px-4 py-2 rounded-full text-xs font-mono uppercase tracking-widest">
                 <Rose className="w-4 h-4" />
-                Romeo & Juliet · The Peacemaker
+                Romeo & Juliet · Loyal Servant
               </div>
               <h1 className="font-sans text-6xl md:text-7xl font-black text-white uppercase tracking-tight">
-                Benvolio
+                Balthasar
               </h1>
               <p className="font-mono text-lg text-blue-400">
-                Nephew to Lord Montague and Romeo's Cousin
+                Servant to Romeo Montague
               </p>
               <p className="text-lg text-stone-300 leading-relaxed max-w-2xl font-serif italic border-b border-stone-800 pb-6">
-                A level-headed and peace-loving Montague who consistently tries to prevent violence between the feuding families, serving as a voice of reason in the chaos that ultimately consumes Verona.
+                Romeo's devoted servant who delivers the tragic news of Juliet's death, unknowingly setting in motion the final act of the tragedy.
               </p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                <StatCard label="Relation" value="Montague Nephew" />
+                <StatCard label="Age" value="Adult" />
                 <StatCard label="House" value="Montague" />
-                <StatCard label="Status" value="Alive" />
+                <StatCard label="Status" value="Survivor" />
                 <StatCard label="Era" value="16th Century" />
               </div>
             </div>
           </div>
 
+          {/* BIOGRAPHY SECTION */}
           <div className="glass-panel rounded-2xl p-8 border border-stone-800">
             <h2 className="font-mono text-2xl text-white uppercase tracking-widest mb-6 flex items-center gap-3">
               <Shield className="w-6 h-6 text-blue-500" />
@@ -105,17 +114,55 @@ export default function Benvolio() {
             </h2>
             <div className="prose prose-invert max-w-none space-y-4 text-stone-300 leading-relaxed">
               <p>
-                Benvolio Montague is Romeo's cousin and close friend, known for his peacemaking nature and level-headed temperament. His name means "well-wisher" or "benevolent," reflecting his role as the voice of reason and peace throughout the play.
+                Balthasar is Romeo's loyal servant in Shakespeare's "Romeo and Juliet." As a member of the Montague household, he serves Romeo faithfully throughout the play, though his most significant moment comes near the tragic end.
               </p>
               <p>
-                Benvolio consistently tries to defuse conflicts and prevent violence. He attempts to stop the opening brawl between the servants, tries to keep Romeo from fighting Tybalt, and urges Mercutio to retire from the heat of the day to avoid confrontation.
+                After Romeo flees to Mantua following his banishment, Balthasar brings him news from Verona. However, due to the failed plan involving Friar Laurence's message, Balthasar delivers the devastating news that Juliet has died and been laid to rest in the Capulet tomb.
               </p>
               <p>
-                As a trustworthy witness, Benvolio provides an honest account of events to the Prince. He explains how Tybalt started the fight that led to Mercutio's death, and how Romeo killed Tybalt in self-defense. His testimony helps the Prince understand the truth behind the tragedy.
+                This false information drives Romeo to despair and leads him to return to Verona to take his own life beside Juliet. Balthasar's unwitting role in delivering this tragic news makes him a key figure in the play's final, heart-wrenching moments.
               </p>
             </div>
           </div>
 
+          {/* KEY EVENTS */}
+          <div className="glass-panel rounded-2xl p-8 border border-stone-800">
+            <h2 className="font-mono text-2xl text-white uppercase tracking-widest mb-6 flex items-center gap-3">
+              <Swords className="w-6 h-6 text-blue-500" />
+              Key Events
+            </h2>
+            <div className="space-y-6">
+              <div className="flex gap-4">
+                <div className="flex-shrink-0 w-24 text-right font-mono text-xs text-blue-400">
+                  ACT V
+                </div>
+                <div className="flex-1 border-l-2 border-blue-500/30 pl-4">
+                  <h4 className="font-bold text-white mb-1">News from Verona</h4>
+                  <p className="text-sm text-stone-400">Balthasar travels to Mantua to inform Romeo of Juliet's death.</p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="flex-shrink-0 w-24 text-right font-mono text-xs text-blue-400">
+                  ACT V
+                </div>
+                <div className="flex-1 border-l-2 border-blue-500/30 pl-4">
+                  <h4 className="font-bold text-white mb-1">The Tragic Mistake</h4>
+                  <p className="text-sm text-stone-400">Balthasar tells Romeo that Juliet has been buried, unaware that she is only in a death-like sleep.</p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="flex-shrink-0 w-24 text-right font-mono text-xs text-blue-400">
+                  ACT V
+                </div>
+                <div className="flex-1 border-l-2 border-blue-500/30 pl-4">
+                  <h4 className="font-bold text-white mb-1">Witness to Tragedy</h4>
+                  <p className="text-sm text-stone-400">Balthasar witnesses Romeo's death and reports it to the Prince.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* QUOTES */}
           <div className="glass-panel rounded-2xl p-8 border border-stone-800">
             <h2 className="font-mono text-2xl text-white uppercase tracking-widest mb-6 flex items-center gap-3">
               <Scroll className="w-6 h-6 text-blue-500" />
@@ -124,48 +171,30 @@ export default function Benvolio() {
             <div className="space-y-6">
               <div className="border-l-4 border-blue-500/50 pl-4">
                 <blockquote className="italic text-stone-300 text-lg mb-2">
-                  "Part, fools! Put up your swords; you know not what you do."
+                  "She is in heaven where I shall never see her."
                 </blockquote>
                 <p className="text-sm text-stone-400 mb-1">
-                  Benvolio's attempt to stop the opening brawl between the servants, demonstrating his role as a peacemaker and voice of reason.
+                  Balthasar's report to Romeo about Juliet's death, unknowingly confirming the false information that leads to tragedy.
                 </p>
-                <p className="font-mono text-xs text-blue-400">Act 1, Scene 1</p>
+                <p className="font-mono text-xs text-blue-400">Act 5, Scene 1</p>
               </div>
               <div className="border-l-4 border-blue-500/50 pl-4">
                 <blockquote className="italic text-stone-300 text-lg mb-2">
-                  "I do but keep the peace: put up thy sword, or manage it to part these men with me."
+                  "Romeo, my lord, my master, is dead."
                 </blockquote>
                 <p className="text-sm text-stone-400 mb-1">
-                  Benvolio's response to Tybalt's aggression, explaining his peaceful intentions and offering to help resolve the conflict without violence.
+                  Balthasar's anguished report to the Prince after discovering Romeo's body in the tomb.
                 </p>
-                <p className="font-mono text-xs text-blue-400">Act 1, Scene 1</p>
+                <p className="font-mono text-xs text-blue-400">Act 5, Scene 3</p>
               </div>
               <div className="border-l-4 border-blue-500/50 pl-4">
                 <blockquote className="italic text-stone-300 text-lg mb-2">
-                  "Be ruled by me, forget to think of her."
+                  "Her body sleeps in Capel's monument."
                 </blockquote>
                 <p className="text-sm text-stone-400 mb-1">
-                  Benvolio's advice to Romeo after Rosaline rejects him, encouraging his cousin to move on and stop dwelling on unrequited love.
+                  Balthasar's confirmation of Juliet's burial location, which drives Romeo to the tomb.
                 </p>
-                <p className="font-mono text-xs text-blue-400">Act 1, Scene 1</p>
-              </div>
-              <div className="border-l-4 border-blue-500/50 pl-4">
-                <blockquote className="italic text-stone-300 text-lg mb-2">
-                  "Here were the servants of your adversary and yours close fighting ere I did approach."
-                </blockquote>
-                <p className="text-sm text-stone-400 mb-1">
-                  Benvolio's honest account to Lord Montague about how the brawl started, showing his integrity as a witness who speaks truthfully.
-                </p>
-                <p className="font-mono text-xs text-blue-400">Act 1, Scene 1</p>
-              </div>
-              <div className="border-l-4 border-blue-500/50 pl-4">
-                <blockquote className="italic text-stone-300 text-lg mb-2">
-                  "Madam, an hour before the worshipped sun peer'd forth the golden window of the east, a troubled mind drave me to walk abroad."
-                </blockquote>
-                <p className="text-sm text-stone-400 mb-1">
-                  Benvolio's explanation to Lady Montague about why he was up early, revealing his concern for Romeo's melancholy state.
-                </p>
-                <p className="font-mono text-xs text-blue-400">Act 1, Scene 1</p>
+                <p className="font-mono text-xs text-blue-400">Act 5, Scene 1</p>
               </div>
             </div>
           </div>
@@ -185,38 +214,38 @@ export default function Benvolio() {
                     </div>
                     <div>
                       <h3 className="font-sans font-bold text-white group-hover:text-blue-400 transition-colors">Romeo</h3>
-                      <p className="font-mono text-xs text-stone-500">Cousin</p>
+                      <p className="font-mono text-xs text-stone-500">Master</p>
                     </div>
                   </div>
-                  <p className="text-sm text-stone-400">Benvolio's cousin whom he tries to guide away from trouble.</p>
+                  <p className="text-sm text-stone-400">Balthasar serves Romeo faithfully and delivers the news that leads to tragedy.</p>
                 </div>
               </Link>
-              <Link to="/mercutio" className="group">
-                <div className="glass-panel p-4 rounded-lg border border-stone-700 hover:border-blue-500/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(96,165,250,0.1)]">
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center">
-                      <Zap className="w-5 h-5 text-blue-400" />
-                    </div>
-                    <div>
-                      <h3 className="font-sans font-bold text-white group-hover:text-blue-400 transition-colors">Mercutio</h3>
-                      <p className="font-mono text-xs text-stone-500">Friend</p>
-                    </div>
-                  </div>
-                  <p className="text-sm text-stone-400">Benvolio's fellow Montague who often opposes his peacekeeping efforts.</p>
-                </div>
-              </Link>
-              <Link to="/tybalt" className="group">
+              <Link to="/juliet" className="group">
                 <div className="glass-panel p-4 rounded-lg border border-stone-700 hover:border-red-500/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(248,113,113,0.1)]">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-10 h-10 rounded-full bg-red-500/20 flex items-center justify-center">
-                      <Shield className="w-5 h-5 text-red-400" />
+                      <Zap className="w-5 h-5 text-red-400" />
                     </div>
                     <div>
-                      <h3 className="font-sans font-bold text-white group-hover:text-red-400 transition-colors">Tybalt</h3>
-                      <p className="font-mono text-xs text-stone-500">Opponent</p>
+                      <h3 className="font-sans font-bold text-white group-hover:text-red-400 transition-colors">Juliet</h3>
+                      <p className="font-mono text-xs text-stone-500">Subject of News</p>
                     </div>
                   </div>
-                  <p className="text-sm text-stone-400">The hot-headed Capulet whom Benvolio tries to reason with.</p>
+                  <p className="text-sm text-stone-400">Balthasar reports Juliet's death to Romeo, unaware she is only sleeping.</p>
+                </div>
+              </Link>
+              <Link to="/friarlawrence" className="group">
+                <div className="glass-panel p-4 rounded-lg border border-stone-700 hover:border-yellow-500/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(250,204,21,0.1)]">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-10 h-10 rounded-full bg-yellow-500/20 flex items-center justify-center">
+                      <Shield className="w-5 h-5 text-yellow-400" />
+                    </div>
+                    <div>
+                      <h3 className="font-sans font-bold text-white group-hover:text-yellow-400 transition-colors">Friar Lawrence</h3>
+                      <p className="font-mono text-xs text-stone-500">Failed Messenger</p>
+                    </div>
+                  </div>
+                  <p className="text-sm text-stone-400">The friar's message to Romeo never reaches him, leading to Balthasar's tragic report.</p>
                 </div>
               </Link>
             </div>

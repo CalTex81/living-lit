@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Scroll, Clock, MapPin, Heart, Rose, Zap, Shield } from 'lucide-react';
+import { ArrowLeft, Shield, Heart, Swords, Scroll, Clock, MapPin, Rose, Zap } from 'lucide-react';
 
 const FloatingParticles = () => {
   const [particles, setParticles] = useState<{ id: number, size: number, left: number, top: number, duration: number, delay: number }[]>([]);
@@ -38,7 +38,7 @@ const FloatingParticles = () => {
   );
 };
 
-export default function Juliet() {
+export default function LordLadyCapulet() {
   return (
     <div className="min-h-screen bg-stone-950 text-stone-300 font-sans selection:bg-red-500/30 selection:text-red-200 relative overflow-hidden">
       <div className="fixed inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/Background_Romeo&Juliet.png")' }}>
@@ -55,7 +55,7 @@ export default function Juliet() {
           <span>RETURN_TO_ARCHIVE</span>
         </Link>
         <div className="flex items-center gap-4 text-stone-500">
-          ID: JULIET_CAPULET_001
+          ID: CAPULET_FAMILY_001
         </div>
       </header>
 
@@ -68,6 +68,7 @@ export default function Juliet() {
         >
           {/* HERO SECTION */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Character Image - Left side */}
             <div className="relative">
             <motion.div 
                 className="aspect-square flex items-center justify-center overflow-hidden rounded-2xl -mt-10"
@@ -75,9 +76,9 @@ export default function Juliet() {
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             >
                 <img 
-                  src="/Juliet (R&J).png" 
-                  alt="Juliet Capulet"
-                  className="w-[110%] sm:w-[125%] md:w-[135%] lg:w-[145%] xl:w-[160%] 2xl:w-[180%] max-w-none h-auto max-h-[95vh] object-contain drop-shadow-[0_0_45px_rgba(248,113,113,0.5)] relative z-20"
+                  src="/Lord&Lady Capulet (R&J).png" 
+                  alt="Lord & Lady Capulet"
+                  className="w-[95%] sm:w-[100%] md:w-[105%] lg:w-[110%] xl:w-[115%] 2xl:w-[120%] max-w-none h-auto max-h-[95vh] object-contain drop-shadow-[0_0_45px_rgba(248,113,113,0.5)] relative z-20"
                 />
               </motion.div>
             </div>
@@ -85,21 +86,21 @@ export default function Juliet() {
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 bg-red-500/10 border border-red-500/30 text-red-400 px-4 py-2 rounded-full text-xs font-mono uppercase tracking-widest">
                 <Rose className="w-4 h-4" />
-                Romeo & Juliet · Tragic Heroine
+                Romeo & Juliet · Capulet Family Heads
               </div>
               <h1 className="font-sans text-6xl md:text-7xl font-black text-white uppercase tracking-tight">
-                Juliet<br/>Capulet
+                Lord & Lady<br/>Capulet
               </h1>
               <p className="font-mono text-lg text-red-400">
-                Daughter of Lord and Lady Capulet
+                Heads of the Capulet Household
               </p>
               <p className="text-lg text-stone-300 leading-relaxed max-w-2xl font-serif italic border-b border-stone-800 pb-6">
-                A young noblewoman of the Capulet family whose secret marriage to Romeo Montague defies her family's hatred, leading her to take a potion to feign death in a desperate attempt to escape with her beloved.
+                The noble leaders of the Capulet family, whose decisions about Juliet's marriage and the feud with the Montagues shape the tragic course of events.
               </p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                <StatCard label="Age" value="13-14" />
+                <StatCard label="Status" value="Alive" />
                 <StatCard label="House" value="Capulet" />
-                <StatCard label="Status" value="Deceased" />
+                <StatCard label="Children" value="Juliet" />
                 <StatCard label="Era" value="16th Century" />
               </div>
             </div>
@@ -108,18 +109,18 @@ export default function Juliet() {
           {/* BIOGRAPHY SECTION */}
           <div className="glass-panel rounded-2xl p-8 border border-stone-800">
             <h2 className="font-mono text-2xl text-white uppercase tracking-widest mb-6 flex items-center gap-3">
-              <Heart className="w-6 h-6 text-red-500" />
+              <Shield className="w-6 h-6 text-red-500" />
               Biography
             </h2>
             <div className="prose prose-invert max-w-none space-y-4 text-stone-300 leading-relaxed">
               <p>
-                Juliet Capulet is the tragic heroine of Shakespeare's "Romeo and Juliet." Though only thirteen years old, she displays remarkable maturity, passion, and determination throughout the play. As the daughter of Lord and Lady Capulet, she is expected to marry Paris, a noble kinsman of the Prince.
+                Lord and Lady Capulet are the heads of the Capulet family in Shakespeare's "Romeo and Juliet." As wealthy nobles of Verona, they are deeply invested in maintaining their family's honor and social standing.
               </p>
               <p>
-                At the Capulet masked ball, Juliet meets Romeo Montague and falls instantly in love, despite their families' bitter feud. She proves herself to be a decisive and courageous character, secretly marrying Romeo the very next day with Friar Laurence's help.
+                Lord Capulet initially seems patient about Juliet's marriage, even encouraging Paris to wait. However, after Tybalt's death, he becomes determined to hasten the marriage, believing it will help Juliet overcome her grief.
               </p>
               <p>
-                When Romeo is banished for killing Tybalt, Juliet refuses to marry Paris and seeks Friar Laurence's help. She takes a potion to feign death, planning to awaken and escape with Romeo. However, misfortune leads to Romeo finding her seemingly dead body and taking his own life. Juliet awakens to find Romeo dead and takes her own life with his dagger.
+                Lady Capulet is more ambitious, pushing for the match with Paris from the beginning. When Juliet refuses to marry Paris, both parents react with anger and threaten to disown her, demonstrating the rigid expectations placed on noble daughters of the era.
               </p>
             </div>
           </div>
@@ -127,7 +128,7 @@ export default function Juliet() {
           {/* KEY EVENTS */}
           <div className="glass-panel rounded-2xl p-8 border border-stone-800">
             <h2 className="font-mono text-2xl text-white uppercase tracking-widest mb-6 flex items-center gap-3">
-              <Scroll className="w-6 h-6 text-red-500" />
+              <Swords className="w-6 h-6 text-red-500" />
               Key Events
             </h2>
             <div className="space-y-6">
@@ -136,17 +137,8 @@ export default function Juliet() {
                   ACT I
                 </div>
                 <div className="flex-1 border-l-2 border-red-500/30 pl-4">
-                  <h4 className="font-bold text-white mb-1">The Balcony Scene</h4>
-                  <p className="text-sm text-stone-400">Juliet professes her love to Romeo from her balcony, defying her family's hatred.</p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-24 text-right font-mono text-xs text-red-400">
-                  ACT II
-                </div>
-                <div className="flex-1 border-l-2 border-red-500/30 pl-4">
-                  <h4 className="font-bold text-white mb-1">Secret Marriage</h4>
-                  <p className="text-sm text-stone-400">Juliet secretly marries Romeo, choosing love over family loyalty.</p>
+                  <h4 className="font-bold text-white mb-1">Paris Proposal</h4>
+                  <p className="text-sm text-stone-400">Lord Capulet agrees to consider Paris's marriage proposal for Juliet.</p>
                 </div>
               </div>
               <div className="flex gap-4">
@@ -154,17 +146,26 @@ export default function Juliet() {
                   ACT III
                 </div>
                 <div className="flex-1 border-l-2 border-red-500/30 pl-4">
-                  <h4 className="font-bold text-white mb-1">Refusal of Paris</h4>
-                  <p className="text-sm text-stone-400">Juliet defiantly refuses to marry Paris after her secret marriage to Romeo.</p>
+                  <h4 className="font-bold text-white mb-1">Hastened Marriage</h4>
+                  <p className="text-sm text-stone-400">After Tybalt's death, Lord Capulet decides Juliet must marry Paris immediately.</p>
                 </div>
               </div>
               <div className="flex gap-4">
                 <div className="flex-shrink-0 w-24 text-right font-mono text-xs text-red-400">
-                  ACT IV
+                  ACT III
                 </div>
                 <div className="flex-1 border-l-2 border-red-500/30 pl-4">
-                  <h4 className="font-bold text-white mb-1">The Potion Plan</h4>
-                  <p className="text-sm text-stone-400">Juliet takes Friar Laurence's potion to feign death and escape with Romeo.</p>
+                  <h4 className="font-bold text-white mb-1">Threat to Disown</h4>
+                  <p className="text-sm text-stone-400">Both parents threaten to disown Juliet when she refuses to marry Paris.</p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="flex-shrink-0 w-24 text-right font-mono text-xs text-red-400">
+                  ACT V
+                </div>
+                <div className="flex-1 border-l-2 border-red-500/30 pl-4">
+                  <h4 className="font-bold text-white mb-1">Reconciliation</h4>
+                  <p className="text-sm text-stone-400">The Capulets reconcile with the Montagues after learning the truth about Romeo and Juliet.</p>
                 </div>
               </div>
             </div>
@@ -179,48 +180,30 @@ export default function Juliet() {
             <div className="space-y-6">
               <div className="border-l-4 border-red-500/50 pl-4">
                 <blockquote className="italic text-stone-300 text-lg mb-2">
-                  "What's in a name? That which we call a rose by any other name would smell as sweet."
+                  "But saying o'er what I have said before: My child is yet a stranger in the world, she hath not seen the change of fourteen years."
                 </blockquote>
                 <p className="text-sm text-stone-400 mb-1">
-                  Juliet's famous soliloquy questioning the importance of family names, realizing that Romeo's identity as a Montague doesn't change who he is.
+                  Lord Capulet's initial reluctance to marry Juliet too young, showing some paternal concern.
                 </p>
-                <p className="font-mono text-xs text-red-400">Act 2, Scene 2</p>
+                <p className="font-mono text-xs text-red-400">Act 1, Scene 2</p>
               </div>
               <div className="border-l-4 border-red-500/50 pl-4">
                 <blockquote className="italic text-stone-300 text-lg mb-2">
-                  "My bounty is as boundless as the sea, my love as deep; the more I give to thee, the more I have, for both are infinite."
+                  "I tell thee what: get thee to church o' Thursday, or never after look me in the face."
                 </blockquote>
                 <p className="text-sm text-stone-400 mb-1">
-                  Juliet's poetic expression of her limitless love for Romeo, comparing it to the endless ocean that grows more abundant the more it gives.
+                  Lord Capulet's ultimatum to Juliet, demonstrating his authoritarian response to her refusal.
                 </p>
-                <p className="font-mono text-xs text-red-400">Act 2, Scene 2</p>
+                <p className="font-mono text-xs text-red-400">Act 3, Scene 5</p>
               </div>
               <div className="border-l-4 border-red-500/50 pl-4">
                 <blockquote className="italic text-stone-300 text-lg mb-2">
-                  "Parting is such sweet sorrow that I shall say goodnight till it be morrow."
+                  "I would the fool were married to her grave."
                 </blockquote>
                 <p className="text-sm text-stone-400 mb-1">
-                  Juliet's bittersweet farewell to Romeo after the balcony scene, expressing the pain of separation while anticipating their next meeting.
+                  Lady Capulet's harsh response when Juliet refuses to marry Paris, showing her lack of empathy.
                 </p>
-                <p className="font-mono text-xs text-red-400">Act 2, Scene 2</p>
-              </div>
-              <div className="border-l-4 border-red-500/50 pl-4">
-                <blockquote className="italic text-stone-300 text-lg mb-2">
-                  "O Romeo, Romeo! Wherefore art thou Romeo? Deny thy father and refuse thy name."
-                </blockquote>
-                <p className="text-sm text-stone-400 mb-1">
-                  The opening of the balcony scene where Juliet laments that Romeo is a Montague, wishing he could abandon his family name to be with her.
-                </p>
-                <p className="font-mono text-xs text-red-400">Act 2, Scene 2</p>
-              </div>
-              <div className="border-l-4 border-red-500/50 pl-4">
-                <blockquote className="italic text-stone-300 text-lg mb-2">
-                  "I'll to my wedding-bed; and death, not Romeo, take my maidenhead!"
-                </blockquote>
-                <p className="text-sm text-stone-400 mb-1">
-                  Juliet's dramatic declaration that she would rather die than marry Paris, showing her absolute commitment to Romeo despite the consequences.
-                </p>
-                <p className="font-mono text-xs text-red-400">Act 3, Scene 2</p>
+                <p className="font-mono text-xs text-red-400">Act 3, Scene 5</p>
               </div>
             </div>
           </div>
@@ -232,46 +215,46 @@ export default function Juliet() {
               Recommended Characters
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <Link to="/romeo" className="group">
-                <div className="glass-panel p-4 rounded-lg border border-stone-700 hover:border-blue-500/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(96,165,250,0.1)]">
+              <Link to="/juliet" className="group">
+                <div className="glass-panel p-4 rounded-lg border border-stone-700 hover:border-red-500/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(248,113,113,0.1)]">
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center">
-                      <Heart className="w-5 h-5 text-blue-400" />
+                    <div className="w-10 h-10 rounded-full bg-red-500/20 flex items-center justify-center">
+                      <Heart className="w-5 h-5 text-red-400" />
                     </div>
                     <div>
-                      <h3 className="font-sans font-bold text-white group-hover:text-blue-400 transition-colors">Romeo</h3>
-                      <p className="font-mono text-xs text-stone-500">Husband</p>
+                      <h3 className="font-sans font-bold text-white group-hover:text-red-400 transition-colors">Juliet</h3>
+                      <p className="font-mono text-xs text-stone-500">Daughter</p>
                     </div>
                   </div>
-                  <p className="text-sm text-stone-400">Juliet's beloved husband, whose love for her defies their families' feud.</p>
-                </div>
-              </Link>
-              <Link to="/thenurse" className="group">
-                <div className="glass-panel p-4 rounded-lg border border-stone-700 hover:border-yellow-500/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(250,204,21,0.1)]">
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-10 h-10 rounded-full bg-yellow-500/20 flex items-center justify-center">
-                      <Zap className="w-5 h-5 text-yellow-400" />
-                    </div>
-                    <div>
-                      <h3 className="font-sans font-bold text-white group-hover:text-yellow-400 transition-colors">The Nurse</h3>
-                      <p className="font-mono text-xs text-stone-500">Confidante</p>
-                    </div>
-                  </div>
-                  <p className="text-sm text-stone-400">Juliet's devoted caregiver and messenger for her secret romance.</p>
+                  <p className="text-sm text-stone-400">Their daughter whose refusal to marry Paris leads to tragedy.</p>
                 </div>
               </Link>
               <Link to="/tybalt" className="group">
                 <div className="glass-panel p-4 rounded-lg border border-stone-700 hover:border-red-500/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(248,113,113,0.1)]">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-10 h-10 rounded-full bg-red-500/20 flex items-center justify-center">
-                      <Shield className="w-5 h-5 text-red-400" />
+                      <Zap className="w-5 h-5 text-red-400" />
                     </div>
                     <div>
                       <h3 className="font-sans font-bold text-white group-hover:text-red-400 transition-colors">Tybalt</h3>
-                      <p className="font-mono text-xs text-stone-500">Cousin</p>
+                      <p className="font-mono text-xs text-stone-500">Nephew</p>
                     </div>
                   </div>
-                  <p className="text-sm text-stone-400">Juliet's hot-headed cousin whose hatred of Montagues leads to tragedy.</p>
+                  <p className="text-sm text-stone-400">Lady Capulet's nephew whose death accelerates the marriage plans.</p>
+                </div>
+              </Link>
+              <Link to="/paris" className="group">
+                <div className="glass-panel p-4 rounded-lg border border-stone-700 hover:border-red-500/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(248,113,113,0.1)]">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-10 h-10 rounded-full bg-red-500/20 flex items-center justify-center">
+                      <Shield className="w-5 h-5 text-red-400" />
+                    </div>
+                    <div>
+                      <h3 className="font-sans font-bold text-white group-hover:text-red-400 transition-colors">Paris</h3>
+                      <p className="font-mono text-xs text-stone-500">Suitor</p>
+                    </div>
+                  </div>
+                  <p className="text-sm text-stone-400">The noble suitor chosen by the Capulets for Juliet's marriage.</p>
                 </div>
               </Link>
             </div>

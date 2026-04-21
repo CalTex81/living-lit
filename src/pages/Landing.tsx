@@ -93,29 +93,40 @@ export default function Landing() {
           transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
         />
 
-        {/* CONTENT CORE - Split layout */}
+        {/* CONTENT CORE - Centered layout */}
         <motion.div 
-          className="relative z-20 flex items-center justify-between w-full px-12"
+          className="relative z-20 flex flex-col items-center justify-center w-full px-12 text-center"
           style={{ 
             x: mousePos.x,
             y: mousePos.y
           }}
         >
-          {/* LEFT SIDE - Content */}
-          <div className="flex-1 flex flex-col justify-center">
-            {/* TITLE SEQUENCE */}
+          {/* TITLE SEQUENCE */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="space-y-6"
+          >
+            <h1 className="font-sans text-6xl md:text-8xl font-black text-white uppercase tracking-tight leading-[0.9]">
+              Living<br/>
+              <span className="text-green-500">Literature</span>
+            </h1>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              className="space-y-2"
+              transition={{ duration: 1, delay: 0.3 }}
             >
-              <h1 className="font-sans text-6xl md:text-8xl font-black text-white uppercase tracking-tight leading-[0.9]">
-                Living<br/>
-                <span className="text-green-500">Literature</span>
-              </h1>
+              <Link 
+                to="/archive"
+                className="inline-flex items-center gap-3 bg-green-500/10 border border-green-500/30 text-green-400 px-8 py-4 rounded-lg font-mono text-sm uppercase tracking-widest hover:bg-green-500/20 hover:border-green-500/50 transition-all duration-300 group"
+              >
+                <Database className="w-5 h-5" />
+                Access Archive
+                <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </motion.div>
-          </div>
+          </motion.div>
         </motion.div>
       </div>
 
