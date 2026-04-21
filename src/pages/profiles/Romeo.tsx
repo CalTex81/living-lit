@@ -8,13 +8,13 @@ const FloatingParticles = () => {
   
   useEffect(() => {
     setParticles(
-      Array.from({ length: 200 }).map((_, i) => ({
+      Array.from({ length: 300 }).map((_, i) => ({
         id: i,
-        x: Math.random() * 60 + 20, // Concentrated in center-left area
-        y: Math.random() * 60 + 20,
-        size: Math.random() * 8 + 4,
-        speed: Math.random() * 10 + 5,
-        opacity: Math.random() * 0.3 + 0.7
+        x: Math.random() * 40 + 5, // Concentrated on left side where character is
+        y: Math.random() * 50 + 25,
+        size: Math.random() * 10 + 6,
+        speed: Math.random() * 8 + 4,
+        opacity: Math.random() * 0.4 + 0.6
       }))
     );
   }, []);
@@ -77,20 +77,20 @@ export default function Romeo() {
           {/* HERO SECTION */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Character Image - Left side */}
-            <motion.div 
-              className="relative"
-              animate={{ y: [0, -15, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            >
-              <div className="aspect-square flex items-center justify-center overflow-hidden rounded-2xl -mt-20">
+            <div className="relative">
+              <motion.div 
+                className="aspect-square flex items-center justify-center overflow-hidden rounded-2xl -mt-20"
+                animate={{ y: [0, -15, 0] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              >
                 <img 
                   src="/Romeo (R&J).png" 
                   alt="Romeo Montague"
                   className="w-full h-full object-cover"
                 />
-              </div>
+              </motion.div>
               
-              {/* Profile Info Overlay */}
+              {/* Profile Info Overlay - Not floating */}
               <div className="absolute bottom-4 left-4 right-4 glass-panel rounded-xl p-4 border border-green-500/30 shadow-[0_0_30px_rgba(34,197,94,0.1)]">
                 <h3 className="font-mono text-xs text-green-400 uppercase tracking-widest mb-3 flex items-center gap-2">
                   <Scroll className="w-3 h-3" />
@@ -107,7 +107,7 @@ export default function Romeo() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
 
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/30 text-green-400 px-4 py-2 rounded-full text-xs font-mono uppercase tracking-widest">
