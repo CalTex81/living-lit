@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { Database, Shield, Zap, Globe, Cpu, ChevronRight, Activity } from 'lucide-react';
+import { Database, Shield, Zap, Globe, Cpu, ChevronRight, Activity, BookOpen } from 'lucide-react';
 
 const TimeVortex = () => {
   const [particles, setParticles] = useState<{ id: number; r: number; theta: number; speed: number; size: number; opacity: number }[]>([]);
@@ -122,7 +122,7 @@ export default function Landing() {
                 className="inline-flex items-center gap-3 bg-green-500/10 border border-green-500/30 text-green-400 px-8 py-4 rounded-lg font-mono text-sm uppercase tracking-widest hover:bg-green-500/20 hover:border-green-500/50 transition-all duration-300 group"
               >
                 <Database className="w-5 h-5" />
-                Access Archive
+                Explore Archive
                 <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </motion.div>

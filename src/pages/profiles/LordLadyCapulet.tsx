@@ -50,12 +50,12 @@ export default function LordLadyCapulet() {
 
       {/* HEADER */}
       <header className="fixed top-0 left-0 right-0 h-14 bg-stone-950/80 backdrop-blur-md border-b border-stone-800 z-40 flex items-center px-6 justify-between text-xs font-mono">
-        <Link to="/archive" className="flex items-center gap-3 text-stone-400 hover:text-red-400 transition-colors">
+        <Link to="/story/romeo-and-juliet" className="flex items-center gap-3 text-stone-400 hover:text-red-400 transition-colors">
           <ArrowLeft className="w-4 h-4" />
-          <span>RETURN_TO_ARCHIVE</span>
+          <span>RETURN_TO_STORY</span>
         </Link>
         <div className="flex items-center gap-4 text-stone-500">
-          ID: CAPULET_FAMILY_001
+          <span>ID: CAPULET_FAMILY_001</span>
         </div>
       </header>
 

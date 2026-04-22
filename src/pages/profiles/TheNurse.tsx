@@ -49,9 +49,9 @@ export default function TheNurse() {
       <div className="fixed inset-0 scanlines pointer-events-none opacity-[0.03] z-50"></div>
 
       <header className="fixed top-0 left-0 right-0 h-14 bg-stone-950/80 backdrop-blur-md border-b border-stone-800 z-40 flex items-center px-6 justify-between text-xs font-mono">
-        <Link to="/archive" className="flex items-center gap-3 text-stone-400 hover:text-yellow-400 transition-colors">
+        <Link to="/story/romeo-and-juliet" className="flex items-center gap-3 text-stone-400 hover:text-yellow-400 transition-colors">
           <ArrowLeft className="w-4 h-4" />
-          <span>RETURN_TO_ARCHIVE</span>
+          <span>RETURN_TO_STORY</span>
         </Link>
         <div className="flex items-center gap-4 text-stone-500">ID: NURSE_001</div>
       </header>

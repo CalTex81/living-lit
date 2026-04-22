@@ -12,6 +12,7 @@ import Paris from './pages/profiles/Paris';
 import PrinceEscalus from './pages/profiles/PrinceEscalus';
 import LordLadyCapulet from './pages/profiles/LordLadyCapulet';
 import LordLadyMontague from './pages/profiles/LordLadyMontague';
+import RomeoAndJuliet from './pages/stories/RomeoAndJuliet';
 import Landing from './pages/Landing';
 import Home from './pages/Home';
 
@@ -32,6 +33,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/archive" element={<Home />} />
+        <Route path="/story/romeo-and-juliet" element={<RomeoAndJuliet />} />
         <Route path="/romeo" element={<Romeo />} />
         <Route path="/juliet" element={<Juliet />} />
         <Route path="/friarlawrence" element={<FriarLawrence />} />
