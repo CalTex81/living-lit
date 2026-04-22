@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Romeo from './pages/profiles/Romeo';
 import Juliet from './pages/profiles/Juliet';
 import FriarLawrence from './pages/profiles/FriarLawrence';
@@ -15,9 +15,20 @@ import LordLadyMontague from './pages/profiles/LordLadyMontague';
 import Landing from './pages/Landing';
 import Home from './pages/Home';
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/archive" element={<Home />} />
